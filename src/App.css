@@ -1,3 +1,73 @@
+/* styles.css */
+
+body {
+  margin: 0; /* Reset default body margin */
+  padding: 0; /* Reset default body padding */
+  background-image: url('./resources/bg.jpg'); /* Set the background image URL */
+  background-size: 130%; /* Scale the image to cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+.container {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 5%;
+  left: 0.5%;
+  width: 6.5%;
+  height: auto;
+  z-index: 1000;
+}
+
+.heading {
+  position: absolute;
+  top: 0;
+  left: 8%;
+}
+
+.ieee-logo {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  width: 9%;
+  height: auto;
+  z-index: 1000;
+}
+
+.carousel-and-content {
+  position: relative;
+  top: 10em;
+}
+
+.buttons {
+  position: relative;
+  bottom: 0; 
+  top: 8rem;
+  left: 0; 
+  width: 100%;
+}
+
+.buttons button {
+  margin: 3%; /* Add spacing between buttons */
+  padding: 1% 2%; /* Adjust button padding as needed */
+  height: 100%;
+  background-color: transparent; /* Change button background color */
+  color: rgb(0, 0, 0); /* Change button text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttons button:hover {
+  background-color: #0056b3; /* Change button background color on hover */
+  color: white;
+}
+
 .App {
   text-align: center;
 }

@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="container">
       <Navbar />
-      <Container fluid style={{height: "100%", maxHeight: "80vh"}}>
+      <Container fluid style={{height: "100%", maxHeight: "80vh", margin: 20}}>
         <HeroCarousel /> {/* Hero Carousel */}
       </Container>
       <About />

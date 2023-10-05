@@ -5,7 +5,7 @@ const Event = () => {
   return (
     <React.Fragment>
       <div className='text-4xl font-semibold p-4'>Events</div>
-      <div className='flex overflow-x-auto bg-slate-50'>
+      <div className='flex overflow-x-auto'>
         {Data.map((data) => {
           return (
             <div

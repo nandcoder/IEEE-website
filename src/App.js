@@ -1,19 +1,27 @@
+import React from "react";
 import "./App.css";
 import HeroCarousel from "./components/Carousel";
-import About from "./pages/About";
+import About from "./components/About";
 import Navbar from "./components/Navbar";
 import { Container } from "react-bootstrap";
+import Footer from "./components/Footer";
+import Aboutieee from "./components/Aboutieee";
+import Event from "./components/Event";
+import Features from "./components/Features";
 
 function App() {
   return (
-    <div className="container">
+    <React.Fragment>
       <Navbar />
-      <Container fluid style={{height: "100%", maxHeight: "80vh", margin: 20}}>
-        <HeroCarousel /> {/* Hero Carousel */}
+      <Container>
+        <HeroCarousel />
       </Container>
       <About />
-      {/* Event Carousel */}
-    </div>
+      <Aboutieee />
+      <Event />
+      <Features />
+      <Footer />
+    </React.Fragment>
   );
 }
 

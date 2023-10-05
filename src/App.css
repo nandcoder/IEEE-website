@@ -1,57 +1,71 @@
 /* styles.css */
 
 body {
-  margin: 0; /* Reset default body margin */
-  padding: 0; /* Reset default body padding */
-  background-image: url('./resources/bg.jpg'); /* Set the background image URL */
-  background-size: 130%; /* Scale the image to cover the entire viewport */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the background image */
+  margin: 0;
+  padding: 0;
+  /* background-image: url("./resources/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
 
 .container {
   position: relative;
+  min-height: fit-content;
+  margin: 2%;
+}
+
+.head-wrapper {
+  min-height: 10vh;
+  margin: 2% 10%;
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .logo {
   position: absolute;
-  top: 5%;
-  left: 0.5%;
-  width: 6.5%;
-  height: auto;
+  left: 1%;
+  height: 60px;
+  max-height: 10vh;
+  width: auto;
+  max-width: 10vw;
   z-index: 1000;
 }
 
 .heading {
   position: absolute;
-  top: 0;
-  left: 8%;
+  height: auto;
+  height: fit-content;
+  max-height: 8vh;
 }
 
 .ieee-logo {
   position: absolute;
-  top: 7%;
   right: 5%;
-  width: 9%;
-  height: auto;
+  height: 60px;
+  max-height: 10vh;
+  width: auto;
+  max-width: 10vw;
   z-index: 1000;
 }
 
 .carousel-and-content {
   position: relative;
-  top: 10em;
 }
 
 .buttons {
+  margin: 10px auto;
   position: relative;
-  bottom: 0; 
-  top: 8rem;
-  left: 0; 
+  bottom: 0;
+  left: 0;
   width: 100%;
 }
 
 .buttons button {
-  margin: 3%; /* Add spacing between buttons */
   padding: 1% 2%; /* Adjust button padding as needed */
   height: 100%;
   background-color: transparent; /* Change button background color */
@@ -68,41 +82,3 @@ body {
   color: white;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

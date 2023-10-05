@@ -14,7 +14,7 @@ const Features = () => {
         <div>
             <div className='p-2 max-w-xl'>
                 <button className='text-sky-700 text-lg font-bold py-1 px-4 border-solid border-2 border-blue-700 rounded-3xl mb-4'>VOLUNTEER WITH US</button>
-                <div className='font-semibold text-justify p-2'>Just shoot an email to <a href='mailto:ieee.iitkgp.sb@gmail.com' className='text-sky-800'> ieee.iitkgp.sb@gmail.com</a> or message us in<a href='https://in.linkedin.com/' className='text-sky-800'> Linkedin </a>and we will get back to you ASAP </div>
+                <div className='font-semibold text-justify p-2'>Just shoot an email to <a href='mailto:ieee.nitjsr@gmail.com' className='text-sky-800'>ieee.nitjsr@gmail.com</a> or message us in <a href='https://linkedin.com/' className='text-sky-800'>Linkedin</a> and we will get back to you ASAP </div>
             </div>
         </div>
     </div>

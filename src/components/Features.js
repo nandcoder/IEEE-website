@@ -2,7 +2,7 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <div className='flex p-6 bg-slate-50'>
+    <div className='flex p-6'>
         <div className='p-2 max-w-xl'>
             <button className='text-sky-700 text-lg font-bold py-1 px-4 border-solid border-2 border-blue-700 rounded-3xl mb-4'>FEATURED</button>
             <div className='flex bg-slate-100 p-4 border-solid border-2 border-slate-200 rounded-3xl'>

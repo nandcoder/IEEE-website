@@ -3,11 +3,11 @@
 body {
   margin: 0;
   padding: 0;
-  /* background-image: url("./resources/bg.jpg");
+  background-image: url("./resources/bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .container {

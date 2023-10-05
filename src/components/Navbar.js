@@ -1,18 +1,18 @@
 import React from 'react'
 import logo from "../resources/logo.png";
 import ieeeLogo from "../resources/ieee_logo.png";
-import { CardText, CardTitle } from 'react-bootstrap';
+
 const Navbar = () => {
     return (
         <React.Fragment>
             <div className='head-wrapper'>
                 <img src={logo} alt="Logo" className="logo" />
                 <div className="heading">
-                    <CardTitle className="fs-1">IEEE Student Branch NIT Jamshedpur</CardTitle>
-                    <CardText style={{ marginTop: '-2%' }} className="fs-3">
+                    <div className="text-2xl font-bold">IEEE Student Branch NIT Jamshedpur</div>
+                    <div style={{ marginTop: '-2%' }} className="text-lg font-medium">
                         The professional home for the engineering <br></br> and technology community at
                         NIT Jamshedpur
-                    </CardText>
+                    </div>
                 </div>
                 <img src={ieeeLogo} alt="IEEE Logo" className="ieee-logo" />
             </div>

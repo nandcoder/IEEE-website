@@ -18,7 +18,7 @@ body {
 
 .head-wrapper {
   min-height: 10vh;
-  margin: 2% 5%;
+  margin: 2% 10%;
   display: flex;
   height: fit-content;
   flex-direction: row;

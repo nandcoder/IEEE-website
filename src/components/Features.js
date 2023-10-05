@@ -7,7 +7,7 @@ const Features = () => {
             <button className='text-sky-700 text-lg font-bold py-1 px-4 border-solid border-2 border-blue-700 rounded-3xl mb-4'>FEATURED</button>
             <div className='flex bg-slate-100 p-4 border-solid border-2 border-slate-200 rounded-3xl'>
                 <div className='font-semibold text-justify text-lg p-2'>inaugration of IEEE system council at DJLHC on teacher's. IEEE Electron device society was setup under the systems...</div>
-                <img src='images/bulb1.png' className='max-h-40 min-w-fit'/>
+                <img src='images/bulb1.png' alt='bulb1' className='max-h-40 min-w-fit'/>
             </div>
         </div>
         <div className='md:m-32'></div>

@@ -1,28 +1,13 @@
 import React from "react";
-import "./App.css";
-import HeroCarousel from "./components/Carousel";
-import About from "./components/About";
 import Navbar from "./components/Navbar";
-import { Container } from "react-bootstrap";
-import Footer from "./components/Footer";
-import Aboutieee from "./components/Aboutieee";
-import Event from "./components/Event";
-import Features from "./components/Features";
-
-function App() {
+import "./App.css";
+const App = () => {
   return (
-    <React.Fragment>
+    <div>
       <Navbar />
-      <Container>
-        <HeroCarousel />
-      </Container>
-      <About />
-      <Aboutieee />
-      <Event />
-      <Features />
-      <Footer />
-    </React.Fragment>
+      <div className="dev">dev</div>
+    </div>
   );
-}
+};
 
 export default App;

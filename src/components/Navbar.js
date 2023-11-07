@@ -29,32 +29,32 @@ const Navbar = () => {
         >
           <ul>
             <li>
-              <a className="navbar-buttons" href="#">
+              <a className="navbar-buttons" href="/">
                 About
               </a>
             </li>
             <li>
-              <a className="navbar-buttons" href="#">
+              <a className="navbar-buttons" href="/">
                 Events
               </a>
             </li>
             <li>
-              <a className="navbar-buttons" href="#">
+              <a className="navbar-buttons" href="/">
                 Branch Chapters
               </a>
             </li>
             <li>
-              <a className="navbar-buttons" href="#">
+              <a className="navbar-buttons" href="/">
                 Membership
               </a>
             </li>
             <li>
-              <a className="navbar-buttons" href="#">
+              <a className="navbar-buttons" href="/">
                 Contact Us
               </a>
             </li>
             <li>
-              <a className="navbar-buttons" href="#">
+              <a className="navbar-buttons" href="/">
                 Our team
               </a>
             </li>
@@ -63,7 +63,7 @@ const Navbar = () => {
 
         {/* hamburget menu start  */}
         <div className="hamburger-menu">
-          <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+          <a href="/" onClick={() => setShowMediaIcons(!showMediaIcons)}>
             <GiHamburgerMenu className="hamburger-logo" />
           </a>
         </div>

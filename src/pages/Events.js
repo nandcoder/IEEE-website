@@ -45,7 +45,10 @@ function Events() {
         <EventCard />
         <EventCard />
         <div>
-          <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded my-4 flex items-center">
+          <button
+            class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 my-4 flex items-center"
+            style={{ borderRadius: "50px" }}
+          >
             See more
             <i class="fa fa-arrow-right ml-2"></i>
           </button>

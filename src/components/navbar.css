@@ -1,0 +1,232 @@
+/* navbar.css */
+
+/* Default styles for larger screens */
+.main-nav {
+    background-color: white;
+    /* Change the background color to white */
+    color: black;
+    /* Change the text color to black */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: fit-content;
+    min-height: 10vh;
+}
+
+.head {
+    padding: 0;
+    display: flex;
+    max-width: 30%;
+    min-height: inherit;
+}
+
+.logo-div {
+    max-width: 30%;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.heading {
+    padding-left: 100px;
+    margin: auto;
+    margin-right: 0px;
+    /* max-width: 20%; */
+}
+
+.main-heading {
+    font-size: 28px;
+    font-weight: bold;
+    /* Make the main heading slightly bold */
+    margin-bottom: 5px;
+}
+
+.sub-heading {
+    font-size: 20px;
+    font-weight: bold;
+    /* Make the sub-heading slightly bold */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: first baseline;
+}
+
+li {
+    margin-right: 10px;
+}
+
+a {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    /* Change link text color to black */
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.navbar-buttons:hover {
+    background-color: #176499;
+    color: #fff;
+    padding: 2px;
+    /* border-radius: 5px; */
+}
+
+/* Media query for medium screens (e.g., mobile) */
+@media (max-width: 1150px) {
+    .menu-link {
+        display: none;
+    }
+
+    .head {
+        max-width: 90%;
+    }
+
+    .logo-div {
+        max-width: 15%;
+    }
+
+    .logo {
+        max-width: 100%;
+    }
+
+    .heading {
+        /* padding: 50px; */
+        padding-left: 100px;
+        padding-right: 0;
+        /* align-items: right; */
+        margin: auto;
+    }
+
+    .mobile-menu-link {
+        display: block;
+        background-color: rgb(207, 49, 49);
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .mobile-menu-link ul {
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        margin-top: 15px;
+    }
+
+    .hamburger-logo {
+        font-size: 40px;
+    }
+}
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 960px) {
+    .mobile-menu-link {
+        top: 140px;
+    }
+}
+
+@media (max-width: 880px) {
+    .mobile-menu-link {
+        top: 130px;
+    }
+}
+
+@media (max-width: 810px) {
+    .mobile-menu-link {
+        top: 120px;
+    }
+}
+
+@media (max-width: 735px) {
+    .head {
+        max-width: 90%;
+    }
+
+    .heading {
+        align-items: right;
+        padding: 0;
+        padding-left: 80px;
+        margin: auto;
+    }
+
+    .logo-div {
+        max-width: 17%;
+    }
+
+    .logo {
+        max-width: 100%;
+    }
+
+    .menu-link {
+        display: none;
+    }
+
+    .mobile-menu-link {
+        display: block;
+        background-color: rgb(207, 49, 49);
+        position: absolute;
+        top: 120px;
+        left: 0px;
+        width: 100%;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .mobile-menu-link ul {
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .hamburger-logo {
+        margin: auto;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .mobile-menu-link {
+        top: 110px;
+    }
+}
+
+@media (max-width: 580px) {
+    .mobile-menu-link {
+        top: 100px;
+    }
+}
+
+@media (max-width: 520px) {
+    .mobile-menu-link {
+        top: 90px;
+    }
+}

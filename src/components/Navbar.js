@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
 // import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const [showMediaIcons, setShowMediaIcons] = useState(false);

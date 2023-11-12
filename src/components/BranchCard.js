@@ -10,7 +10,7 @@ function EventCard() {
           width: "90%",
           backgroundColor: "#0A4771",
           color: "#F6F5F5",
-          display: "flex",
+          // display: "flex",
           margin: "2em",
         }}
       >

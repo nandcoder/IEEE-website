@@ -34,7 +34,7 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <a className="navbar-buttons" href="/">
+                            <a className="navbar-buttons" href="/events">
                                 Events
                             </a>
                         </li>

@@ -1,6 +1,6 @@
 import React from "react";
 import EventCard from "../components/EventCard";
-import arrow from "../assets/icons8-arrow-24.png";
+// import arrow from "../assets/icons8-arrow-24.png";
 function Events() {
   return (
     <>

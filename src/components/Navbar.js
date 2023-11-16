@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import logo from "../resources/logo.png";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 // import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -35,9 +36,9 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
-                            <a className="navbar-buttons" href="/events">
+                            <Link className="navbar-buttons" to="/events">
                                 Events
-                            </a>
+                            </Link>
                         </li>
                         <li>
                             <a className="navbar-buttons" href="/">

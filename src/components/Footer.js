@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -61,6 +62,9 @@ const Footer = () => {
                             <button className="btn">{">"} IEEE Collabratec</button>
                             <button className="btn">{">"} Careers at IEEE</button>
                             <button className="btn">{">"} IEEE Newsroom</button>
+                            <button className="btn">{">"}
+                                <Link style={{ fontSize: "inherit", color: "inherit", fontFamily: "inherit", textDecoration: "none" }} to="/branch">Admin Login</Link>
+                            </button>
                         </div>
                     </div>
                 </div>

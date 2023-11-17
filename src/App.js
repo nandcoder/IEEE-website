@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './App.css';
 import HeroCarousel from './components/Carousel';
@@ -9,20 +10,18 @@ import Aboutieee from './components/Aboutieee';
 import Event from './components/Event';
 import Features from './components/Features';
 
+=======
+import "./App.css";
+import Routes from "./routes";
+import { useRoutes } from "react-router-dom";
+import React from "react";
+>>>>>>> main
 function App() {
+  let element = useRoutes(Routes);
   return (
     <React.Fragment>
-      <Navbar />
-      <Container>
-        <HeroCarousel />
-      </Container>
-      <About />
-      <Aboutieee />
-      <Event />
-      <Features />
-      <Footer />
+      <div className="App">{element} </div>
     </React.Fragment>
   );
 }
-
 export default App;

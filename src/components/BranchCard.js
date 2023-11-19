@@ -49,7 +49,7 @@ function EventCard() {
             adipisci magnam, in incidunt? Quisquam at suscipit nemo asperiores
           </div>
 
-          <div class="col-span-2 flex items-center ">
+          <div className="col-span-2 flex items-center ">
             <img
               src={Image}
               alt=""
@@ -61,18 +61,18 @@ function EventCard() {
 
         <div style={{ display: "flex", justifyContent: "right" }}>
           <button
-            class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4  flex items-center"
+            className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4  flex items-center"
             style={{ borderRadius: "50px", margin: "1em 3em 1em 1em" }}
           >
             Update
-            <i class="fa fa-arrow-right ml-2"></i>
+            <i className="fa fa-arrow-right ml-2"></i>
           </button>
           <button
-            class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4  flex items-center"
+            className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4  flex items-center"
             style={{ borderRadius: "50px", margin: "1em 3em 1em 1em" }}
           >
             Delete
-            <i class="fa fa-arrow-right ml-2"></i>
+            <i className="fa fa-arrow-right ml-2"></i>
           </button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../assets/krishna2.jpg";
-function EventCard() {
+function EventCard({ event }) {
   return (
     <>
       <div
@@ -24,30 +24,51 @@ function EventCard() {
             margin: "2em",
             marginBottom: "0",
             paddingBottom: "0",
+            justifyContent: "space-between",
+            maxHeight: "15em",
+            maxWidth: "100%",
           }}
         >
           <div
-            className="col-span-3"
             style={{
-              fontFamily: "'Inter', sans-serif",
-              alignItems: "center",
               display: "flex",
-              maxHeight: "8em", // Adjust the max height based on your needs
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              whiteSpace: "wrap", // Use nowrap to prevent line breaks
+              flexDirection: "column",
+              margin: "none",
+              maxWidth: "80%",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-            aspernatur ea recusandae, voluptas quidem adipisci in nobis numquam
-            sequi eveniet cumque tenetur ad delectus at. Aliquam fuga eius
-            dignissimos autem excepturi minima perspiciatis repellendus vero
-            adipisci magnam, in incidunt? Quisquam at suscipit nemo asperiores
-            pariatur, reiciendis similique, aliquam enim non in accusamus
+            <div>
+              {" "}
+              <h2>{event.title}</h2>
+            </div>
+            <div
+              className="col-span-3"
+              style={{
+                alignItems: "center",
+                display: "flex",
+                position: "relative",
+                flexDirection: "column",
+                maxHeight: "100%", // Adjust the max height based on your needs
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                whiteSpace: "wrap", // Use nowrap to prevent line breaks
+                width: "80%",
+              }}
+            >
+              <span dangerouslySetInnerHTML={{ __html: event.body }} />
+            </div>
+            <div>
+              <div style={{ paddingTop: "5px" }}>Author: {event.author} </div>
+              <div>Date: {event.date} </div>
+            </div>
           </div>
-
           <div class="col-span-1 flex items-center ">
-            <img src={Image} alt="" srcset="" style={{ margin: "auto" }} />{" "}
+            <img
+              src={event.images[0]}
+              alt=""
+              srcset=""
+              style={{ margin: "auto", maxHeight: "150px" }}
+            />{" "}
           </div>
         </div>
         <div style={{ display: "flex", justifyContent: "right" }}>

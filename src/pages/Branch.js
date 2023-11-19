@@ -1,6 +1,28 @@
 import React from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import BranchCard from "../components/BranchCard";
 function Branch() {
+  const [event, setEvent] = useState([]);
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const response = await axios.get(
+          "https://ieee-1vzv.onrender.com/api/events"
+        );
+        //console.log("All crimes are => ", response.data.result);
+        setEvent(response.data.events);
+        console.log("Successfully fetched ", response.data.events);
+      } catch (error) {
+        console.error("Error fetching events:", error);
+      }
+      setLoading(false);
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
       <div
@@ -61,10 +83,10 @@ function Branch() {
             <i class="fa fa-plus-circle ml-2"></i>
           </button>
         </div>
-        <BranchCard />
-        <BranchCard />
-        <BranchCard />
-        <BranchCard />
+        {event.map((event, index) => (
+          <BranchCard key={index} event={event} />
+        ))}
+
       </div>
     </>
   );

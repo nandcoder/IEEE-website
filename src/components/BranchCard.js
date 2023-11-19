@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "../assets/krishna2.jpg";
-function EventCard() {
+function EventCard({ event }) 
+{
+  
   return (
     <>
       <div
@@ -15,7 +17,7 @@ function EventCard() {
         }}
       >
         <div
-          className="grid grid-cols-6 gap-2 "
+          className="grid grid-cols-4 gap-2"
           style={{
             backgroundColor: "#0A4771",
             color: "#F6F5F5",
@@ -25,36 +27,50 @@ function EventCard() {
             margin: "2em",
             marginBottom: "0",
             paddingBottom: "0",
+            justifyContent: "space-between",
+            maxHeight: "15em",
+            maxWidth: "100%",
           }}
         >
           <div
-            className="col-span-4"
             style={{
-              fontFamily: "'Inter', sans-serif",
-              alignItems: "center",
-              display: "-webkit-box",
-              maxHeight: "calc(1.2em * 5)", // Adjust the line height and number of lines
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              whiteSpace: "normal", // Use 'normal' instead of 'wrap'
-              WebkitLineClamp: 5, // Specify the number of lines
-              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              margin: "none",
+              maxWidth: "80%",
             }}
           >
-            {/* Your text content */}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-            aspernatur ea recusandae, voluptas quidem adipisci in nobis numquam
-            sequi eveniet cumque tenetur ad delectus at. Aliquam fuga eius
-            dignissimos autem excepturi minima perspiciatis repellendus vero
-            adipisci magnam, in incidunt? Quisquam at suscipit nemo asperiores
+            <div>
+              {" "}
+              <h2>{event.title}</h2>
+            </div>
+            <div
+              className="col-span-3"
+              style={{
+                alignItems: "center",
+                display: "flex",
+                position: "relative",
+                flexDirection: "column",
+                maxHeight: "100%", // Adjust the max height based on your needs
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                whiteSpace: "wrap", // Use nowrap to prevent line breaks
+                width: "80%",
+              }}
+            >
+              <span dangerouslySetInnerHTML={{ __html: event.body }} />
+            </div>
+            <div>
+              <div style={{ paddingTop: "5px" }}>Author: {event.author} </div>
+              <div>Date: {event.date} </div>
+            </div>
           </div>
-
-          <div className="col-span-2 flex items-center ">
+          <div class="col-span-1 flex items-center ">
             <img
-              src={Image}
+              src={event.images[0]}
               alt=""
               srcset=""
-              style={{ height: "20vh", width: "100%" }}
+              style={{ margin: "auto", maxHeight: "150px" }}
             />{" "}
           </div>
         </div>
@@ -81,3 +97,4 @@ function EventCard() {
 }
 
 export default EventCard;
+

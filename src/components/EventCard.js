@@ -13,6 +13,10 @@ function EventCard({ event }) {
           margin: "2em",
         }}
       >
+
+
+
+        
         <div
           className="grid grid-cols-4 gap-2"
           style={{

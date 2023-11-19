@@ -3,27 +3,36 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div className="container">
-      <div className="carousel-and-content">
-        <h2 style={{ marginLeft: "5%" }}>About Us</h2>
+    <div className='container'>
+      <div className='carousel-and-content'>
+        <h2
+          style={{ marginLeft: '45%', paddingBottom: '3.5%', paddingTop: '2%' }}
+        >
+          About Us
+        </h2>
         <Container fluid>
           <Row xs={1} md={2} lg={2}>
-            <Col style={{ marginBottom: 10, borderRadius: "10%" }}>
+            <Col
+              style={{
+                marginBottom: '7%',
+                borderRadius: '10%',
+                // marginLeft: 1,
+              }}
+            >
               <div
                 style={{
-                  backgroundColor: "#d4e3ed", // Gray background color
-                  color: "#000",
-                  fontSize: "20px",
-                  padding: "1%",
-                  marginLeft: "3%",
-                  marginRight: "3%", // Adjust padding as needed
+                  backgroundColor: '#d4e3ed', // Gray background color
+                  color: '#000',
+                  fontSize: '20px',
+                  padding: '7%',
+                  paddingTop: '12%',
+                  //   marginLeft: '%',
+                  marginRight: '3%', // Adjust padding as needed
                   // width: '50%',            // Adjust width as needed
-                  float: "left", // Align to the left
-                  clear: "both", // Clear the float
-                  boxSizing: "border-box", // Include padding in width
-                  display: "flex",
-                  flexWrap: "wrap",
-                  maxWidth: "100vw",
+                  float: 'left', // Align to the left
+                  clear: 'both', // Clear the float
+                  boxSizing: 'border-box',
+                  borderRadius: '2%', // Include padding in width
                 }}
               >
                 <p>
@@ -40,18 +49,19 @@ const About = () => {
                 </p>
               </div>
             </Col>
-            <Col style={{ marginBottom: 10, borderRadius: "10%" }}>
+            <Col style={{ marginBottom: '7%', borderRadius: '10%' }}>
               <iframe
                 style={{
-                  maxHeight: "500px",
-                  maxWidth: "1000px",
-                  height: "100%",
-                  width: "100%",
+                  maxHeight: '500px',
+                  maxWidth: '1000px',
+                  height: '100%',
+                  width: '100%',
+                  borderRadius: '2%',
                 }}
-                src="https://www.youtube.com/embed/ERHPw_OaVI4?si=ZHcyIIQ2xNjotHC8"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                src='https://www.youtube.com/embed/ERHPw_OaVI4?si=ZHcyIIQ2xNjotHC8'
+                title='YouTube video player'
+                frameborder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
                 allowfullscreen
               ></iframe>
             </Col>

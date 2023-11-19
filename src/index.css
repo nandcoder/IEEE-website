@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 
+
+@layer base {
+
+  body{
+    background-color:aqua;
+  }
+}
 /* 
 body {
   margin: 0;

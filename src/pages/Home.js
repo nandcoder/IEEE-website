@@ -7,6 +7,7 @@ import About from "../components/About";
 import { Container } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import AboutMobile from "../components/AboutMobile";
+import Layout from "../components/Layout";
 function Home() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   useEffect(() => {
@@ -25,8 +26,8 @@ function Home() {
       <Container>
         <HeroCarousel />
       </Container>
-      {/* {isMobile ? <AboutMobile /> : <About />} */}
-      <AboutMobile />
+      {isMobile ? <AboutMobile /> : <About />}
+      {/* <AboutMobile /> */}
       <Aboutieee />
       <Event />
       <Features />

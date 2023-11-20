@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "../assets/krishna2.jpg";
-function EventCard({ event }) 
-{
-  
+import { useNavigate } from "react-router-dom";
+function EventCard({ event }) {
+  const navigate = useNavigate();
+  const [id, setId] = useState(event._id);
+  console.log(id);
   return (
     <>
       <div
@@ -79,6 +81,7 @@ function EventCard({ event })
           <button
             className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4  flex items-center"
             style={{ borderRadius: "50px", margin: "1em 3em 1em 1em" }}
+            onClick={() => navigate(`/form/${event._id}`, { state: { id } })}
           >
             Update
             <i className="fa fa-arrow-right ml-2"></i>
@@ -97,4 +100,3 @@ function EventCard({ event })
 }
 
 export default EventCard;
-

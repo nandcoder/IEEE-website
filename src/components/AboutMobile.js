@@ -5,7 +5,7 @@ import UncontrolledExample from "./UncontrolledCaraousel";
 const ExampleCarouselImage = ({ text, backgroundColor, element }) => {
   const divStyle = {
     width: "80vw",
-    height: "60vh",
+    height: "auto",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

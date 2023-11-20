@@ -1,5 +1,9 @@
 import Slider from 'react-slick';
-import { useState, useEffect, useRef } from 'react';
+import image1 from '../assets/BS-_aess.png';
+import image2 from '../assets/Logo-IAS.png';
+import image3 from '../assets/OIP (1).jpeg';
+import image4 from '../assets/OIP (2).jpeg';
+import image5 from '../assets/OIP.jpeg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './BranchChapters.css';
@@ -9,55 +13,67 @@ const BranchChapters = () => {
       id: 1,
       title: 'Advancing Technology for Humanity',
       description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
-      image:
-        'https://wallpapers.com/images/hd/tree-on-green-lake-1519g7y2yexhnyvl.jpg',
+      image: image1,
     },
     {
       id: 2,
       title: 'Second slide label',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      image:
-        'https://wallpapers.com/images/hd/tree-on-green-lake-1519g7y2yexhnyvl.jpg',
+      image: image2,
     },
     {
       id: 3,
       title: 'Third slide label',
       description:
         'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
-      image:
-        'https://wallpapers.com/images/hd/tree-on-green-lake-1519g7y2yexhnyvl.jpg',
+      image: image3,
     },
     {
       id: 4,
       title: 'Third slide label',
       description:
         'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
-      image:
-        'https://wallpapers.com/images/hd/tree-on-green-lake-1519g7y2yexhnyvl.jpg',
+      image: image4,
     },
     {
       id: 5,
       title: 'Third slide label',
       description:
         'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
-      image:
-        'https://wallpapers.com/images/hd/tree-on-green-lake-1519g7y2yexhnyvl.jpg',
+      image: image5,
     },
     {
       id: 6,
-      title: 'Third slide label',
-      description:
-        'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
-      image:
-        'https://wallpapers.com/images/hd/tree-on-green-lake-1519g7y2yexhnyvl.jpg',
+      title: 'Advancing Technology for Humanity',
+      description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+      image: image1,
     },
     {
       id: 7,
       title: 'Third slide label',
       description:
         'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
-      image:
-        'https://wallpapers.com/images/hd/tree-on-green-lake-1519g7y2yexhnyvl.jpg',
+      image: image2,
+    },
+    {
+      id: 8,
+      title: 'Third slide label',
+      description:
+        'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
+      image: image3,
+    },
+    {
+      id: 9,
+      title: 'Third slide label',
+      description:
+        'Praesent commodo cursus magna, vel scelerisque nisl consectetur.',
+      image: image4,
+    },
+    {
+      id: 10,
+      title: 'Advancing Technology for Humanity',
+      description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.',
+      image: image5,
     },
   ];
   const settings = {
@@ -128,7 +144,6 @@ const BranchChapters = () => {
       {/* <div className='bg-black'> */}
       <div className='w-3/4 m-auto mt-5'>
         <Slider {...settings}>
-          {/* <div className='mt-20'> */}
           {banners.map((banner) => (
             <div className='focus:outline-none rounded-t-xl flex justify-between justify-center items-center'>
               <img
@@ -138,7 +153,6 @@ const BranchChapters = () => {
               />
             </div>
           ))}
-          {/* </div> */}
         </Slider>
       </div>
       {/* </div> */}

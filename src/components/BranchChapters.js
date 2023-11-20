@@ -6,7 +6,6 @@ import image4 from '../assets/OIP (2).jpeg';
 import image5 from '../assets/OIP.jpeg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './BranchChapters.css';
 const BranchChapters = () => {
   const banners = [
     {
@@ -79,7 +78,8 @@ const BranchChapters = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
+    arrows: false,
     autoplay: true,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -142,14 +142,14 @@ const BranchChapters = () => {
         ))}
       </Carousel> */}
       {/* <div className='bg-black'> */}
-      <div className='w-3/4 m-auto mt-5'>
+      <div className='w-3/5 m-auto mt-5'>
         <Slider {...settings}>
           {banners.map((banner) => (
             <div className='focus:outline-none rounded-t-xl flex justify-between justify-center items-center'>
               <img
                 src={banner.image}
                 alt=''
-                className='h-44 w-44 rounded-full'
+                className='h-28 w-28 rounded-full'
               />
             </div>
           ))}

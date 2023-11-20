@@ -1,15 +1,9 @@
 import Slider from 'react-slick';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from './CarouselImage';
+import './BranchChapters.css';
 const BranchChapters = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
   const banners = [
     {
       id: 1,
@@ -70,7 +64,8 @@ const BranchChapters = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    autoplay: true,
+    slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
@@ -100,6 +95,15 @@ const BranchChapters = () => {
       },
     ],
   };
+  //   const slider1Settings = { ...settings, autoplaySpeed: 1000 };
+
+  //   const slider1Ref = useRef(null);
+  //   const delay = (slider, amount) => {
+  //     setTimeout(() => {
+  //       slider.current.slickPlay();
+  //     }, amount);
+  //   };
+
   return (
     <div>
       <div className='text-4xl font-semibold p-4 flex justify-center items-center h-full'>
@@ -121,31 +125,23 @@ const BranchChapters = () => {
           </Carousel.Item>
         ))}
       </Carousel> */}
-      <div className='w-3/4 m-auto'>
+      {/* <div className='bg-black'> */}
+      <div className='w-3/4 m-auto mt-5'>
         <Slider {...settings}>
-          <div className='mt-20'>
-            {banners.map((banner) => (
-              <div className='bg-white h-[450px] text-black rounded-xl '>
-                <div className='h-56 rounded-t-xl bg-indigo-500 flex justify-center items-center'>
-                  <img
-                    src={banner.image}
-                    alt=''
-                    className='h-44 w-44 rounded-full'
-                  />
-                  ;
-                </div>
-                <div className='flex flex-col justify-center items-center gap-4 p-4'>
-                  <p className='text-xl font-semibold'>{banner.title}</p>
-                  <p>{banner.description}</p>
-                  <button className='bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl'>
-                    Explore
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
+          {/* <div className='mt-20'> */}
+          {banners.map((banner) => (
+            <div className='focus:outline-none rounded-t-xl flex justify-between justify-center items-center'>
+              <img
+                src={banner.image}
+                alt=''
+                className='h-44 w-44 rounded-full'
+              />
+            </div>
+          ))}
+          {/* </div> */}
         </Slider>
       </div>
+      {/* </div> */}
     </div>
   );
 };

@@ -1,10 +1,11 @@
-import Events from "./pages/Events";
-import Home from "./pages/Home";
-import Layout from "./components/Layout";
-import Branch from "./pages/Branch";
+import Events from './pages/Events';
+import Home from './pages/Home';
+import Layout from './components/Layout';
+import Branch from './pages/Branch';
+import BranchChapters from './pages/BranchChapters';
 const Routes = [
   {
-    path: "/",
+    path: '/',
     element: <Layout />,
     children: [
       {
@@ -12,12 +13,16 @@ const Routes = [
         element: <Home />,
       },
       {
-        path: "/events",
+        path: '/events',
         element: <Events />,
       },
       {
-        path: "/branch",
+        path: '/branch',
         element: <Branch />,
+      },
+      {
+        path: '/branchchapters',
+        element: <BranchChapters />,
       },
     ],
   },

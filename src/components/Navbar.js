@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import logo from '../resources/logo.png';
 import './navbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { Link } from 'react-router-dom';
-
+import { Link } from 'react-scroll';
 // import { NavLink } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
@@ -30,35 +29,71 @@ const Navbar = () => {
           }
         >
           <ul>
-            <li>
-              <a className='navbar-buttons' href='/'>
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='about'
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+              >
                 About
-              </a>
+              </Link>
             </li>
-            <li>
-              <Link className='navbar-buttons' to='/events'>
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='event'
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+              >
                 Events
               </Link>
             </li>
-            <li>
-              <Link className='navbar-buttons' to='/branchchapters'>
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='branchchapters'
+                spy={true}
+                smooth={true}
+                offset={-20}
+                duration={500}
+              >
                 Branch Chapters
               </Link>
             </li>
-            <li>
-              <a className='navbar-buttons' href='/'>
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='membership'
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+              >
                 Membership
-              </a>
+              </Link>
             </li>
-            <li>
-              <a className='navbar-buttons' href='/'>
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='contactus'
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+              >
                 Contact Us
-              </a>
+              </Link>
             </li>
-            <li>
-              <a className='navbar-buttons' href='/'>
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='team'
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+              >
                 Our team
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

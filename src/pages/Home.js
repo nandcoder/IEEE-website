@@ -4,10 +4,12 @@ import Event from "../components/Event";
 import Features from "../components/Features";
 import HeroCarousel from "../components/Carousel";
 import About from "../components/About";
+
 import { Container } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import AboutMobile from "../components/AboutMobile";
 import Layout from "../components/Layout";
+
 function Home() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   useEffect(() => {
@@ -23,11 +25,16 @@ function Home() {
   }, [window.innerWidth]);
   return (
     <>
-      <Container>
-        <HeroCarousel />
-      </Container>
-      {isMobile ? <AboutMobile /> : <About />}
-      {/* <AboutMobile /> */}
+
+//       <Container>
+//         <HeroCarousel />
+//       </Container>
+//       {isMobile ? <AboutMobile /> : <About />}
+//       {/* <AboutMobile /> */}
+
+      <HeroCarousel />
+      <About />
+
       <Aboutieee />
       <Event />
       <Features />

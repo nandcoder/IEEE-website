@@ -3,6 +3,9 @@ import './Footer.css'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
+    const goToBtn= () => {
+        window.scrollTo({top:0,left:0 , behavior:"smooth"})
+    }
     return (
         <div className="body">
             <div className="footer">
@@ -78,7 +81,7 @@ const Footer = () => {
                         {/* <i className="fa-sharp fa-solid fa-share-nodes"></i> */}
                     </div>
                     <div className="footer-top">
-                        <i className="fa-solid fa-circle-up"></i>
+                        <i className="fa-solid fa-circle-up" onClick={goToBtn}></i>
                         <p className="top-of-page">TOP OF PAGE</p> 
                     </div>
                 </div>

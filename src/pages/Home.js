@@ -10,9 +10,7 @@ import Footer from '../components/Footer';
 function Home() {
   return (
     <>
-      <Container>
-        <HeroCarousel />
-      </Container>
+      <HeroCarousel />
       <About />
       <Aboutieee />
       <BranchChapters />

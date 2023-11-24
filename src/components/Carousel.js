@@ -9,7 +9,7 @@ import img4 from "../assets/ieee4.jpg"
 // import img from "../resources/bg.jpg"
 
 function ControlledCarousel() {
-    const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);

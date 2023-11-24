@@ -105,6 +105,7 @@
 }
 
 .footer-top {
+  text-decoration: none;
   display: flex;
   font-size: 20px;
   color: #fff;

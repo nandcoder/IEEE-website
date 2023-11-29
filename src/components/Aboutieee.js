@@ -55,7 +55,5 @@ const Aboutieee = () => {
   );
 };
 
-  );
-};
 
 export default Aboutieee;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link, Router, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function EventCard({ event }) {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [localDate, setLocalDate] = useState('');
 
   useEffect(() => {

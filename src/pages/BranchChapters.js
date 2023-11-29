@@ -1,8 +1,8 @@
-import React from 'react';
+// import React from 'react';
 // import Image from '../assets/demoPic.png';
 
 const BranchChapters = (props) => {
-  console.log('The event details are :', props);
+  // console.log('The event details are :', props);
   // const formattedDate = formatDateToWords(event.date);
   // function formatDateToWords(dateTimeString) {
   //   const date = new Date(dateTimeString);

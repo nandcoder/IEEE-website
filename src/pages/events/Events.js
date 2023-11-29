@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import EventCard from '../../components/EventCard';
 import { Link } from 'react-router-dom';
+import { Spinner } from 'react-bootstrap';
 // import arrow from "../assets/icons8-arrow-24.png";
 
 function Events() {
@@ -60,7 +61,7 @@ function Events() {
         >
           EVENTS
         </div>
-        {event.slice(0, 3).map((event, index) => (
+        {loading ? <Spinner animation="border" variant="primary" /> : event?.slice(0, 3).map((event, index) => (
           <EventCard key={index} event={event} />
         ))}
         <div>

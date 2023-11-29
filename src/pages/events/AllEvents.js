@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import EventCard from '../../components/EventCard';
+import { Spinner } from 'react-bootstrap';
 // import arrow from "../assets/icons8-arrow-24.png";
 
 function AllEvents() {
@@ -25,9 +26,9 @@ function AllEvents() {
     fetchData();
   }, []);
 
-  const handleSeeMore = () => {
-    alert('Button see more clicked with data:');
-  };
+  // const handleSeeMore = () => {
+  //   alert('Button see more clicked with data:');
+  // };
 
   return (
     <>
@@ -59,7 +60,7 @@ function AllEvents() {
         >
           ALL EVENTS
         </div>
-        {event.map((event, index) => (
+        {loading ? <Spinner animation="border" variant="primary" /> : event?.map((event, index) => (
           <EventCard key={index} event={event} />
         ))}
       </div>

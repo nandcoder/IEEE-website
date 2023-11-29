@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PreviewCard from './PreviewCard';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { Spinner } from 'react-bootstrap';
 
 const Event = () => {
   const [event, setEvent] = useState([]);
@@ -24,9 +25,9 @@ const Event = () => {
     fetchData();
   }, []);
 
-  const handleSeeMore = () => {
-    alert('Button see more clicked with data:');
-  };
+  // const handleSeeMore = () => {
+  //   alert('Button see more clicked with data:');
+  // };
   return (
     <div id='event' className='p-4'>
       <div className='text-4xl font-semibold p-4 flex justify-center items-center h-full'>
@@ -34,7 +35,7 @@ const Event = () => {
       </div>
       <div className=' flex flex-row overflow-y-auto'>
         {/* <div style={{ flexDirection: 'row' }}> */}
-        {event.map((event, index) => (
+        {loading ? <Spinner animation="border" variant="primary" /> : event?.map((event, index) => (
           <PreviewCard key={index} event={event} />
         ))}
         {/* </div> */}

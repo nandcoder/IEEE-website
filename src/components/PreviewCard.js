@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link, Router, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function PreviewCard({ event }) {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [localDate, setLocalDate] = useState('');
 
   useEffect(() => {
@@ -13,6 +13,7 @@ function PreviewCard({ event }) {
 
   const handleReadMore = () => {
     console.log('The event is: ', event);
+    console.log('Local date is: ', localDate);
   };
 
   return (

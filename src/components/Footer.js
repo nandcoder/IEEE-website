@@ -112,21 +112,21 @@ const Footer = () => {
         {/* </div> */}
         <div className="footer-icons">
           <div className="footer-socialedia">
-            <a href="https://www.instagram.com/ieeeorg/?hl=en">
+            <a href="https://www.instagram.com/ieee.nitjsr/" target="_blank"  rel="noreferrer">
               {" "}
               <i className="fa-brands fa-instagram"></i>
             </a>
             {/* <i className="fa-brands fa-facebook"></i> */}
             <a href="https://www.linkedin.com/company/ieee-nit-jamshedpur/?originalSubdomain=in">
               {" "}
-              <i className="fa-brands fa-linkedin-in"></i>
+              <i className="fa-brands fa-linkedin-in" target="_blank"  rel="noreferrer"></i>
             </a>
             <i className="fa-brands fa-youtube"></i>
             {/* <i class="fa-brands fa-x-twitter"></i> */}
             {/* <i className="fa-sharp fa-solid fa-share-nodes"></i> */}
           </div>
-          <div className="footer-top">
-            <i className="fa-solid fa-circle-up" onClick={goToBtn}></i>
+          <div className="footer-top" onClick={goToBtn}>
+            <i className="fa-solid fa-circle-up"></i>
             <p className="top-of-page">TOP OF PAGE</p>
           </div>
         </div>

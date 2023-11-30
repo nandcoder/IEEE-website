@@ -72,8 +72,10 @@ function PreviewCard({ event }) {
               style={{
                 borderRadius: '17px',
                 height: '40%',
-                width: '70%',
+                width: '80%',
                 margin: '1em 3em 1em 1em',
+                display: 'flex',
+                justifyContent: 'flex-end',
               }}
               onClick={handleReadMore}
             >

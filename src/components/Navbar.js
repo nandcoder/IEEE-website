@@ -3,7 +3,7 @@ import logo from '../resources/logo.png';
 import './navbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'react-scroll';
-// import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 // import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -12,15 +12,19 @@ const Navbar = () => {
     <React.Fragment>
       <nav className='main-nav' id='navbar'>
         {/* 1st logo part  */}
+        {/* <NavLink to='/' > */}
         <div className='head'>
-          <div className='logo-div'>
-            <img src={logo} alt='Logo' className='logo' />
-          </div>
-          <div className='heading'>
-            <div className='main-heading'>IEEE Student Branch</div>
-            <div className='sub-heading'>NIT Jamshedpur</div>
-          </div>
+          <NavLink to='/' style={{ color: 'black' }}>
+            <div className='logo-div'>
+              <img src={logo} alt='Logo' className='logo' />
+            </div>
+            <div className='heading'>
+              <div className='main-heading'>IEEE Student Branch</div>
+              <div className='sub-heading'>NIT Jamshedpur</div>
+            </div>
+          </NavLink>
         </div>
+        {/* </NavLink> */}
 
         {/* 2nd menu part  */}
         <div

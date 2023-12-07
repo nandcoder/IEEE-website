@@ -1,0 +1,10 @@
+@media (max-width: 924px) {
+  .preview-card {
+    width: 100%;
+  }
+}
+@media (min-width: 924px) {
+  .preview-card {
+    width: 34%;
+  }
+}

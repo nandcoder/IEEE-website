@@ -78,7 +78,7 @@ const EventDetails = () => {
           ))}
         </div>
         <div>
-          <p>
+          <p dangerouslySetInnerHTML={{__html: event?.body}}>
             {/* {
              <div className='py-2'>
               India's G20 Sherpa Amitabh Kant on drafting the joint communique
@@ -121,7 +121,7 @@ const EventDetails = () => {
               brutal negotiations.
             </div> 
               } */}
-            {event?.body}
+            {/* {event?.body} */}
           </p>
         </div>
       </div>

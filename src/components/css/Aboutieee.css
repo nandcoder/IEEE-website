@@ -1,0 +1,14 @@
+@media (max-width: 924px) {
+  .section {
+    width: 100%;
+  }
+}
+@media (min-width: 924px) {
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section {
+    width: 46%;
+  }
+}

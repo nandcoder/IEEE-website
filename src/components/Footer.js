@@ -1,8 +1,12 @@
 import React from "react";
-import "./Footer.css";
+import "./css/Footer.css";
 import { Link } from "react-router-dom";
-
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <>
       <div className="body">
@@ -79,7 +83,7 @@ const Footer = () => {
                 </a>
                 <a href="https://ieee-collabratec.ieee.org/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=collabratec-membership-list">
                   {" "}
-                  <button className="btn">{">"} IEEE Collabratec</button>
+                  <button className="btn">{">"} IEEE Collabrate</button>
                 </a>
               </div>
             </div>
@@ -125,18 +129,33 @@ const Footer = () => {
             </div>
             <div className="footer-top">
               <i className="fa-solid fa-circle-up"></i>
-              <p className="top-of-page">TOP OF PAGE</p>
+              <ScrollLink
+                to="carousel"
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                <p className="top-of-page">TOP OF PAGE</p>
+              </ScrollLink>
             </div>
           </div>
         </div>
         <div className="footer-copyright">
           <div className="footer-copyright-statement">
             <p>
-              © Copyright 2023 IEEE {"–"} All rights reserved. A not-for-profit
-              organization, IEEE is the world's largest technical professional
-              organization dedicated to advancing technology for the benefit of
-              humanity.
+              Copyright © 2023 All rights reserved | Made with ❤️ by IEEE-NIT
+              JSR
             </p>
+            {/* <p>
+              {" "}
+              A not-for-profit organization, IEEE is the world's largest
+              technical professional organization dedicated to advancing
+              technology for the benefit of humanity.
+            </p> */}
           </div>
         </div>
       </div>

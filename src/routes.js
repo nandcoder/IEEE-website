@@ -1,12 +1,15 @@
-import Events from "./pages/Events";
-import Home from "./pages/Home";
-import Layout from "./components/Layout";
-import Branch from "./pages/Branch";
+import Events from './pages/events/Events';
+import AllEvents from './pages/events/AllEvents';
+import Home from './pages/Home';
+import Layout from './components/Layout';
+import Branch from './pages/Branch';
+// import BranchChapters from './pages/BranchChapters';
+import EventDetails from './pages/events/event';
 import Login from "./pages/Login";
 import Form from "./pages/EventAdmin";
 const Routes = [
   {
-    path: "/",
+    path: '/',
     element: <Layout />,
     children: [
       {
@@ -15,12 +18,16 @@ const Routes = [
         showNavbarAndFooter: true,
       },
       {
-        path: "/events",
+        path: '/events',
         element: <Events />,
         showNavbarAndFooter: true,
       },
       {
-        path: "/branch",
+        path: '/all-events',
+        element: <AllEvents />,
+      },
+      {
+        path: '/branch',
         element: <Branch />,
         showNavbarAndFooter: true,
       },
@@ -38,6 +45,14 @@ const Routes = [
         path: "/form",
         element: <Form />,
         showNavbarAndFooter: true,
+      },
+      {
+        path: '/events/event',
+        element: <EventDetails />,
+      },
+      {
+        path: '/events/event',
+        element: <EventDetails />,
       },
     ],
   },

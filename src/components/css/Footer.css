@@ -29,7 +29,7 @@
 }
 
 .footer-header h3 {
-  margin: 0;
+  padding: 10px;
 }
 
 .footer-data {
@@ -62,6 +62,7 @@
 
 .footer-buttons button:hover {
   background-color: #0d4683;
+  color: white;
 }
 .btn {
   text-align: left;
@@ -148,17 +149,27 @@
 
   background-color: #333;
   color: #fff;
-  text-align: left;
+  text-align: center;
   padding: 10px 0;
   font-size: 14px;
   margin: auto;
   padding: 10px;
 }
 
+.footer-icons {
+  margin: 2%;
+}
 /* Media Queries for responsiveness */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .footer-section {
     margin: 10px;
+  }
+} */
+@media (max-width: 974px) {
+  .footer-section {
+    min-width: 100%;
+    display: absolute;
+    padding: 10px;
   }
 }

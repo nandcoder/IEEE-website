@@ -1,0 +1,15 @@
+#contactus {
+  display: flex;
+  flex-wrap: nowrap;
+}
+@media (max-width: 974px) {
+  #contactus {
+    flex-wrap: wrap;
+  }
+  .midMargin {
+    display: none;
+  }
+  .section {
+    margin-top: 4%;
+  }
+}

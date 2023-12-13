@@ -1,132 +1,112 @@
-import React, { useState } from "react";
-import logo from "../resources/logo.png";
-import "./navbar.css";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-router-dom";
-import ieeeLogo from '../resources/ieee_logo.png';
-
-
-// import { NavLink } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { ScrollLink } from "react-scroll";
+import React, { useState } from 'react';
+import logo from '../resources/logo.png';
+import './navbar.css';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
+// import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate();
-  // const location = useLocation();
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
     <React.Fragment>
-      <nav className="main-nav" id="navbar">
+      <nav className='main-nav' id='navbar'>
         {/* 1st logo part  */}
-        <div className="head">
-          <div className="logo-div">
-            <img src={logo} alt="Logo" className="logo" />
-          </div>
-          <div className="heading">
-            <div className="main-heading">IEEE Student Branch</div>
-            <div className="sub-heading">NIT Jamshedpur</div>
-          </div>
+        {/* <NavLink to='/' > */}
+        <div className='head'>
+          <NavLink to='/' style={{ color: 'black' }}>
+            <div className='logo-div'>
+              <img src={logo} alt='Logo' className='logo' />
+            </div>
+            <div className='heading'>
+              <div className='main-heading'>IEEE Student Branch</div>
+              <div className='sub-heading'>NIT Jamshedpur</div>
+            </div>
+          </NavLink>
         </div>
+        {/* </NavLink> */}
 
         {/* 2nd menu part  */}
         <div
           className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
+            showMediaIcons ? 'menu-link mobile-menu-link' : 'menu-link'
           }
         >
           <ul>
-            <li className="navbar-buttons cursor-pointer">
-              <ScrollLink
-                to="about"
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='about'
                 spy={true}
                 smooth={true}
                 offset={-30}
                 duration={500}
-                onClick={() => {
-                  navigate("/");
-                }}
               >
                 About
-              </ScrollLink>
+              </Link>
             </li>
-            <li className="navbar-buttons cursor-pointer">
-              <ScrollLink
-                to="event"
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='event'
                 spy={true}
                 smooth={true}
                 offset={-30}
                 duration={500}
-                onClick={() => {
-                  navigate("/");
-                }}
               >
                 Events
-              </ScrollLink>
+              </Link>
             </li>
-            <li className="navbar-buttons cursor-pointer">
-              <ScrollLink
-                to="branchchapters"
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='branchchapters'
                 spy={true}
                 smooth={true}
                 offset={-20}
                 duration={500}
-                onClick={() => {
-                  navigate("/");
-                }}
               >
                 Branch Chapters
-              </ScrollLink>
+              </Link>
             </li>
-            <li className="navbar-buttons cursor-pointer">
-              <ScrollLink
-                to="membership"
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='membership'
                 spy={true}
                 smooth={true}
                 offset={-30}
                 duration={500}
-                onClick={() => {
-                  navigate("/");
-                }}
               >
                 Membership
-              </ScrollLink>
+              </Link>
             </li>
-            <li className="navbar-buttons cursor-pointer">
-              <ScrollLink
-                to="contactus"
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='contactus'
                 spy={true}
                 smooth={true}
                 offset={-30}
                 duration={500}
-                onClick={() => {
-                  navigate("/");
-                }}
               >
                 Contact Us
-              </ScrollLink>
+              </Link>
             </li>
-            <li className="navbar-buttons cursor-pointer">
-              <ScrollLink
-                to="team"
+            <li className='navbar-buttons cursor-pointer'>
+              <Link
+                to='team'
                 spy={true}
                 smooth={true}
                 offset={-30}
                 duration={500}
-                onClick={() => {
-                  navigate("/");
-                }}
               >
                 Our team
-              </ScrollLink>
+              </Link>
             </li>
           </ul>
         </div>
 
         {/* hamburget menu start  */}
-        <div className="hamburger-menu">
-          <p onClick={() => setShowMediaIcons(!showMediaIcons)}>
-            <GiHamburgerMenu className="hamburger-logo" />
-          </p>
+        <div className='hamburger-menu'>
+          <a href='/' onClick={() => setShowMediaIcons(!showMediaIcons)}>
+            <GiHamburgerMenu className='hamburger-logo' />
+          </a>
         </div>
       </nav>
     </React.Fragment>

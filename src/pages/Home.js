@@ -25,14 +25,10 @@ function Home() {
   return (
     <>
 
-      <Container>
-        <HeroCarousel />
-      </Container>
-      {isMobile ? <AboutMobile /> : <About />}
-      {/* <AboutMobile /> */}
-
       <HeroCarousel />
-      <About />
+
+      {/* <AboutMobile /> */}
+      {isMobile ? <AboutMobile /> : <About />}
 
       <Aboutieee />
       <BranchChapters />

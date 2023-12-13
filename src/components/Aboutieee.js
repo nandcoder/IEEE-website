@@ -36,10 +36,15 @@ const Aboutieee = () => {
             interact, collaborate, and innovate visit ieee/ membership and
             obtain your membership at the earliest.
           </p>
-          <a href="https://www.ieee.org/membership/join/index.html?utm_source=button_text&utm_medium=lp-membership&utm_campaign=join">
-            <button className=" py-0.5 px-4 bg-orange-400 hover:bg-red-500 text-slate-100 text-xl font-medium rounded-2xl ml-4 mb-4 cursor-pointer">
-              Join us
-            </button>
+          <a
+            href='https://www.ieee.org/membership/join/index.html?utm_source=button_text&utm_medium=lp-membership&utm_campaign=join'
+            style={{ textDecoration: 'none' }}
+          >
+            <div className='flex justify-end'>
+              <button className='py-0.5 px-4 bg-[#E87722] hover:bg-red-500 text-slate-100 text-xl font-medium rounded-2xl mr-4 mt-4 mb-3 cursor-pointer'>
+                Join us
+              </button>
+            </div>
           </a>
         </div>
         <div className="bg-sky-900 sm:ml-6 m-3 section">
@@ -53,10 +58,19 @@ const Aboutieee = () => {
             specialized opportunities. To know about the various IEEE societies
             visit ieee/societies.
           </p>
+          <a
+            href='https://www.ieee.org/communities/societies/index.html'
+            style={{ textDecoration: 'none' }}
+          >
+            <div className='flex justify-end'>
+              <button className='py-0.5 px-4 bg-[#E87722] hover:bg-red-500 text-slate-100 text-xl font-medium rounded-2xl mr-4 mb-3 cursor-pointer'>
+                Explore
+              </button>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   );
 };
-
 export default Aboutieee;

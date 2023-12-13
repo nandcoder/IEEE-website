@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import PreviewCard from "./PreviewCard";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { Spinner } from "react-bootstrap";
 
 const Event = () => {
   const [event, setEvent] = useState([]);
@@ -32,8 +33,9 @@ const Event = () => {
       <div className="text-4xl font-semibold p-4 flex justify-center items-center h-full">
         Recent events
       </div>
-      <div style={{ display: "flex", width: "100%" }}>
-        {event.map((event, index) => (
+      <div className=' flex flex-row overflow-y-auto'>
+        {/* <div style={{ flexDirection: 'row' }}> */}
+        {loading ? <Spinner animation="border" variant="primary" /> : event?.map((event, index) => (
           <PreviewCard key={index} event={event} />
           
         ))}

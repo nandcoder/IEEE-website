@@ -9,25 +9,38 @@ const EventDetails = () => {
   const [event, setEvent] = useState(null);
   // console.log(query);
   useEffect(() => {
-    const queryData = async () => {
-      try {
-        const response = await axios.get(
-          'https://ieee-1vzv.onrender.com/api/events'
-        );
-        response.data.events.map((content) => {
-          console.log('The event is ', content);
-          if (content._id === query) {
-            // console.log('This is terue');
-            setEvent(content);
-          }
-        });
-        // console.log(response.data);
-        // console.log(event);
-      } catch (error) {
-        console.error('Error fetching event details:', error);
-      }
-    };
-    queryData();
+    axios.get('https://ieee-1vzv.onrender.com/api/events').then((res) => {
+      res.data.events.map((content) => {
+        console.log('The event is ', content);
+        if (content._id === query) {
+          // console.log('This is terue');
+          setEvent(content);
+        }
+        return null;
+      });
+    }).catch((err) => {
+      console.log('Error fetching event details:', err);
+    });
+  // }, [query]);
+    // const queryData = async () => {
+    //   try {
+    //     const response = await axios.get(
+    //       'https://ieee-1vzv.onrender.com/api/events'
+    //     );
+    //     response.data.events.map((content) => {
+    //       // console.log('The event is ', content);
+    //       if (content._id === query) {
+    //         // console.log('This is terue');
+    //         setEvent(content);
+    //       }
+    //     });
+    //     // console.log(response.data);
+    //     // console.log(event);
+    //   } catch (error) {
+    //     console.error('Error fetching event details:', error);
+    //   }
+    // };
+    // queryData();
   }, [query]);
 
   const formattedDate = formatDateToWords(event?.date);

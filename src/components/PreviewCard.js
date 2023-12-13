@@ -3,7 +3,7 @@ import { Link, Router, useNavigate } from "react-router-dom";
 import "./css/PreviewCard.css";
 function PreviewCard({ event }) {
   // const navigate = useNavigate();
-  // const [localDate, setLocalDate] = useState('');
+  const [localDate, setLocalDate] = useState('');
 
   // useEffect(() => {
   //   const eventDate = new Date(event.date);
@@ -12,7 +12,8 @@ function PreviewCard({ event }) {
   // }, [event.date]);
 
   const handleReadMore = () => {
-    console.log("The event is: ", event);
+    console.log('The event is: ', event);
+    console.log('Local date is: ', localDate);
   };
 
   return (
@@ -69,10 +70,12 @@ function PreviewCard({ event }) {
             <button
               className="bg-sky-700 hover:bg-sky-600 text-slate-100 font-light py-2 px-4  flex items-center justify-center"
               style={{
-                borderRadius: "17px",
-                height: "40%",
-                width: "70%",
-                margin: "1em 3em 1em 1em",
+                borderRadius: '17px',
+                height: '40%',
+                width: '80%',
+                margin: '1em 3em 1em 1em',
+                display: 'flex',
+                justifyContent: 'flex-end',
               }}
               onClick={handleReadMore}
             >

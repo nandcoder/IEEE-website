@@ -3,7 +3,7 @@ import Image from "../assets/krishna2.jpg";
 import { Link, Router, useNavigate } from 'react-router-dom';
 
 function EventCard({ event }) {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [localDate, setLocalDate] = useState('');
 
   useEffect(() => {

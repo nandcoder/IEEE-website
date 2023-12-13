@@ -50,10 +50,6 @@ const Routes = [
         path: '/events/event',
         element: <EventDetails />,
       },
-      {
-        path: '/events/event',
-        element: <EventDetails />,
-      },
     ],
   },
 ];

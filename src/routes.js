@@ -5,6 +5,8 @@ import Layout from './components/Layout';
 import Branch from './pages/Branch';
 // import BranchChapters from './pages/BranchChapters';
 import EventDetails from './pages/events/event';
+import Login from "./pages/Login";
+import Form from "./pages/EventAdmin";
 const Routes = [
   {
     path: '/',
@@ -13,10 +15,12 @@ const Routes = [
       {
         index: true,
         element: <Home />,
+        showNavbarAndFooter: true,
       },
       {
         path: '/events',
         element: <Events />,
+        showNavbarAndFooter: true,
       },
       {
         path: '/all-events',
@@ -25,6 +29,22 @@ const Routes = [
       {
         path: '/branch',
         element: <Branch />,
+        showNavbarAndFooter: true,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+        showNavbarAndFooter: false,
+      },
+      {
+        path: "/form/:id",
+        element: <Form />,
+        showNavbarAndFooter: true,
+      },
+      {
+        path: "/form",
+        element: <Form />,
+        showNavbarAndFooter: true,
       },
       {
         path: '/events/event',

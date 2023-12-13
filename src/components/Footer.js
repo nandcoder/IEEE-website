@@ -1,8 +1,12 @@
 import React from "react";
-import "./Footer.css";
+import "./css/Footer.css";
 import { Link } from "react-router-dom";
-
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const goToBtn = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
   }
@@ -67,7 +71,7 @@ const Footer = () => {
               </a>
               <a href="https://ieee-collabratec.ieee.org/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=collabratec-membership-list">
                 {" "}
-                <button className="btn">{">"} IEEE Collabratec</button>
+                <button className="btn">{">"} IEEE Collabrate</button>
               </a>
             </div>
           </div>
@@ -112,14 +116,14 @@ const Footer = () => {
         {/* </div> */}
         <div className="footer-icons">
           <div className="footer-socialedia">
-            <a href="https://www.instagram.com/ieee.nitjsr/" target="_blank"  rel="noreferrer">
+            <a href="https://www.instagram.com/ieee.nitjsr/" target="_blank" rel="noreferrer">
               {" "}
               <i className="fa-brands fa-instagram"></i>
             </a>
             {/* <i className="fa-brands fa-facebook"></i> */}
             <a href="https://www.linkedin.com/company/ieee-nit-jamshedpur/?originalSubdomain=in">
               {" "}
-              <i className="fa-brands fa-linkedin-in" target="_blank"  rel="noreferrer"></i>
+              <i className="fa-brands fa-linkedin-in" target="_blank" rel="noreferrer"></i>
             </a>
             <i className="fa-brands fa-youtube"></i>
             {/* <i class="fa-brands fa-x-twitter"></i> */}
@@ -127,18 +131,33 @@ const Footer = () => {
           </div>
           <div className="footer-top" onClick={goToBtn}>
             <i className="fa-solid fa-circle-up"></i>
-            <p className="top-of-page">TOP OF PAGE</p>
+            <ScrollLink
+              to="carousel"
+              spy={true}
+              smooth={true}
+              offset={-30}
+              duration={500}
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              <p className="top-of-page">TOP OF PAGE</p>
+            </ScrollLink>
           </div>
         </div>
       </div>
       <div className="footer-copyright">
         <div className="footer-copyright-statement">
           <p>
+            Copyright © 2023 All rights reserved | Made with ❤️ by IEEE-NIT
+            JSR
+          </p>
+          {/* <p>
             © Copyright 2023 IEEE Student NIT Jsr {"–"} All rights reserved. A
             not-for-profit organization, IEEE is the world's largest technical
             professional organization dedicated to advancing technology for the
             benefit of humanity.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

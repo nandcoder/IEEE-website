@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Image from "../assets/krishna2.jpg";
+import { Link, Router, useNavigate } from 'react-router-dom';
 
 function EventCard({ event }) {
   // const navigate = useNavigate();
@@ -27,6 +28,10 @@ function EventCard({ event }) {
           margin: '2em',
         }}
       >
+
+
+
+        
         <div
           className='grid grid-cols-4 gap-2'
           style={{
@@ -74,6 +79,8 @@ function EventCard({ event }) {
             <div>
               <div style={{ paddingTop: '5px' }}>Author: {event.author} </div>
               <div>Date: {localDate} </div>
+              {/* <div>Date: {event.date} </div> */}
+
               {/* <div>{event.location} </div> */}
             </div>
           </div>

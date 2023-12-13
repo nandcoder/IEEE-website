@@ -1,12 +1,17 @@
-import React from 'react';
+import React from "react";
+import "./css/Aboutieee.css";
 const Aboutieee = () => {
   return (
-    <div className='bg-sky-700 px-24 pb-8' id='membership'>
-      <div className=''>
-        <div className='flex text-3xl font-semibold text-slate-50 py-4 justify-center'>
+    <div
+      className="bg-sky-700 px-6 pb-8"
+      // style={{ paddingLeft: '4.5%', paddingRight: '4.5%' }}
+      id="membership"
+     >
+      <div className="">
+        <div className="text-3xl font-semibold text-slate-50 p-4 ">
           About IEEE
         </div>
-        <p className='text-lg font-normal text-slate-50 px-4 pb-4 text-justify'>
+        <p className="text-lg font-normal text-slate-50 px-4 pb-4 text-justify">
           IEEE is the world's largest professional association dedicated to
           advancing technological innovation and excellence for the benefit of
           humanity. When you join IEEE, you join a community of over 425,000
@@ -20,12 +25,12 @@ const Aboutieee = () => {
           IEEE visit ieee.org.
         </p>
       </div>
-      <div className='sm:flex mt-8'>
-        <div className='bg-sky-900 m-3'>
-          <div className='text-3xl font-semibold text-slate-50 p-4'>
+      <div className=" mt-8 parent ">
+        <div className="bg-sky-900 m-3  section   ">
+          <div className="text-3xl font-semibold text-slate-50 p-4">
             IEEE Membership
           </div>
-          <p className='text-lg font-normal text-slate-50 px-4  text-justify'>
+          <p className="text-lg font-normal text-slate-50 px-4  text-justify">
             To join this community of over 425,000 technology and engineering
             professionals united by a common desire to continuously learn,
             interact, collaborate, and innovate visit ieee/ membership and
@@ -42,11 +47,11 @@ const Aboutieee = () => {
             </div>
           </a>
         </div>
-        <div className='bg-sky-900 sm:ml-6 m-3'>
-          <div className='text-3xl font-semibold text-slate-50 p-4 '>
+        <div className="bg-sky-900 sm:ml-6 m-3 section">
+          <div className="text-3xl font-semibold text-slate-50 p-4 ">
             IEEE Societies
           </div>
-          <p className='text-lg font-normal text-slate-50 px-4 pb-4 text-justify'>
+          <p className="text-lg font-normal text-slate-50 px-4 pb-4 text-justify">
             IEEE Society members stay technically current, network with
             colleagues locally and abroad, and collaborate on research and
             projects with leading experts - all while taking advantage of

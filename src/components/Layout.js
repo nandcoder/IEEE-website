@@ -1,24 +1,17 @@
+// components/Layout.js
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Outlet } from "react-router-dom"; 
- 
- 
- 
+import { Outlet } from "react-router-dom";
 
-const Layout = () => {
+const Layout = ({ showNavbarAndFooter = true }) => {
   return (
     <>
-      <Navbar />
-      
-       
+      {showNavbarAndFooter && <Navbar />}
+
       <Outlet />
-       
-       
-        
-      <Footer />
-       
-       
+
+      {showNavbarAndFooter && <Footer />}
     </>
   );
 };

@@ -18,7 +18,7 @@ body {
 
 .head-wrapper {
   min-height: 10vh;
-  margin: 2% 10%;
+  margin: 4% 10%;
   display: flex;
   height: fit-content;
   flex-direction: row;
@@ -28,19 +28,22 @@ body {
 
 .logo {
   position: absolute;
-  left: 1%;
-  height: 60px;
-  max-height: 10vh;
+  left: 7px;
+  /* margin-top: 10px; */
+  height: '15%';
+  max-height: 10vw;
   width: auto;
   max-width: 10vw;
   z-index: 1000;
 }
 
 .heading {
+  margin-left: 90px;
   position: absolute;
   height: auto;
   height: fit-content;
   max-height: 8vh;
+  /* margin-left: '100%'; */
 }
 
 .ieee-logo {
@@ -71,13 +74,14 @@ body {
   background-color: transparent; /* Change button background color */
   color: rgb(0, 0, 0); /* Change button text color */
   border: none;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
 }
 
 .buttons button:hover {
-  background-color: #0056b3; /* Change button background color on hover */
+  background-color: #2b66a4e6; /* Change button background color on hover */
   color: white;
+  padding: 0.5% 1%;
 }

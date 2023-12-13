@@ -2,12 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @layer base {
-
-  body{
-    background-color:aqua;
+  body {
+    background-color: aqua;
   }
 }
 /* 

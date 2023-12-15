@@ -24,12 +24,8 @@ function Home() {
   }, [window.innerWidth]);
   return (
     <>
-
       <HeroCarousel />
-
-      {/* <AboutMobile /> */}
-      {isMobile ? <AboutMobile /> : <About />}
-
+      <About />
       <Aboutieee />
       <BranchChapters />
       <Event />

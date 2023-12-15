@@ -8,8 +8,8 @@ const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const goToBtn = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
-  }
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
   return (
     <div className="body">
       <div className="footer">
@@ -52,6 +52,15 @@ const Footer = () => {
                   <button className="btn"> {">"} IEEE office locations</button>
                 </a>
               </div>
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14714.745506649784!2d86.12609155541993!3d22.77701740000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4daa475a5cd%3A0xd87b53fadcd771a1!2sNational%20Institute%20of%20Technology%2C%20Jamshedpur!5e0!3m2!1sen!2sin!4v1702625360018!5m2!1sen!2sin"
+                  style={{ width: "15em", height: "10em" }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
           </div>
           <div className="footer-membership footer-section">
@@ -87,7 +96,7 @@ const Footer = () => {
             </div>
             <div className="footer-data-buttons footer-buttons">
               <a href="https://ieee-collabratec.ieee.org/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=collabratec">
-                <button className="btn">{">"} IEEE Collabratec</button>
+                <button className="btn">{">"} IEEE Collabrate</button>
               </a>
               <a href="https://ieee.taleo.net/careersection/2/jobsearch.ftl?utm_source=mf&utm_campaign=taleo-jobs&utm_medium=footer&utm_term=taleo-jobs%20at%20ieee">
                 <button className="btn">{">"} Careers at IEEE</button>
@@ -116,14 +125,22 @@ const Footer = () => {
         {/* </div> */}
         <div className="footer-icons">
           <div className="footer-socialedia">
-            <a href="https://www.instagram.com/ieee.nitjsr/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.instagram.com/ieee.nitjsr/"
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
               <i className="fa-brands fa-instagram"></i>
             </a>
             {/* <i className="fa-brands fa-facebook"></i> */}
             <a href="https://www.linkedin.com/company/ieee-nit-jamshedpur/?originalSubdomain=in">
               {" "}
-              <i className="fa-brands fa-linkedin-in" target="_blank" rel="noreferrer"></i>
+              <i
+                className="fa-brands fa-linkedin-in"
+                target="_blank"
+                rel="noreferrer"
+              ></i>
             </a>
             <i className="fa-brands fa-youtube"></i>
             {/* <i class="fa-brands fa-x-twitter"></i> */}
@@ -149,8 +166,7 @@ const Footer = () => {
       <div className="footer-copyright">
         <div className="footer-copyright-statement">
           <p>
-            Copyright © 2023 All rights reserved | Made with ❤️ by IEEE-NIT
-            JSR
+            Copyright © 2023 All rights reserved | Made with ❤️ by IEEE-NIT JSR
           </p>
           {/* <p>
             © Copyright 2023 IEEE Student NIT Jsr {"–"} All rights reserved. A

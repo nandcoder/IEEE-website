@@ -1,12 +1,12 @@
 import React from "react";
 import "./css/Footer.css";
 import { Link } from "react-router-dom";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { useNavigate } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
-  const location = useLocation();
+  // const location = useLocation();
   const goToBtn = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
@@ -59,6 +59,7 @@ const Footer = () => {
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
+                  title="NIT Jamshedpur Location on Google Maps"
                 ></iframe>
               </div>
             </div>
@@ -131,7 +132,6 @@ const Footer = () => {
             // alignItems: "center",
             width: "90%",
             marginLeft: "3em",
-            
           }}
         >
           <div className="footer-socialedia">

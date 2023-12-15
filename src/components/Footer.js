@@ -123,7 +123,17 @@ const Footer = () => {
           </div>
         </div>
         {/* </div> */}
-        <div className="footer-icons">
+        <div
+          className="footer-icons"
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            // alignItems: "center",
+            width: "90%",
+            marginLeft: "3em",
+            
+          }}
+        >
           <div className="footer-socialedia">
             <a
               href="https://www.instagram.com/ieee.nitjsr/"
@@ -142,7 +152,9 @@ const Footer = () => {
                 rel="noreferrer"
               ></i>
             </a>
-            <i className="fa-brands fa-youtube"></i>
+            <a href="https://www.youtube.com/@IEEEStudentBranchNITJamshedpur">
+              <i className="fa-brands fa-youtube"></i>
+            </a>
             {/* <i class="fa-brands fa-x-twitter"></i> */}
             {/* <i className="fa-sharp fa-solid fa-share-nodes"></i> */}
           </div>

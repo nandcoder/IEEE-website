@@ -7,6 +7,8 @@ import img1 from "../assets/ieee1.jpg";
 import img3 from "../assets/ieee3.jpg";
 import img4 from "../assets/ieee4.jpg";
 import img5 from "../assets/ieee5.jpg";
+import img6 from "../assets/ieee6.jpeg";
+import img7 from "../assets/ieee7.jpeg";
 // import img from "../resources/bg.jpg"
 
 function ControlledCarousel() {
@@ -41,6 +43,21 @@ function ControlledCarousel() {
       description:
         "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
       image: img5,
+    },
+    {
+      id: 5,
+      title:
+        "NIT jamshedpur director Prof. Goutam Sutradhar welcomes Prof. Sivaji Chakravorti",
+      description:
+        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      image: img6,
+    },
+    {
+      id: 6,
+      title: "",
+      description:
+        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      image: img7,
     },
   ];
 

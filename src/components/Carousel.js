@@ -50,8 +50,17 @@ function ControlledCarousel() {
         {banners.map((banner) => (
           <Carousel.Item key={banner.id}>
             <ExampleCarouselImage text={banner.title} image={banner.image} />
-            <Carousel.Caption className='text-base md:text-xl lg:text-3xl xl:text-4xl' style={{ background: 'linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))', width: 'inherit', left: 0, bottom: 0 }}>
-            {/* <Carousel.Caption
+            <Carousel.Caption
+              className="text-lg sm:text-sm"
+              style={{
+                background:
+                  "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))",
+                width: "inherit",
+                left: 0,
+                bottom: 0,
+              }}
+            >
+              {/* <Carousel.Caption
               style={{
                 // fontSize: "2.25rem",
                 background:
@@ -61,7 +70,7 @@ function ControlledCarousel() {
                 bottom: 0,
               }}
             > */}
-              <h3 style={{paddingBottom: '1%'}}>{banner.title}</h3>
+              <h3 style={{ paddingBottom: "1%" }}>{banner.title}</h3>
             </Carousel.Caption>
           </Carousel.Item>
         ))}

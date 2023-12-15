@@ -10,7 +10,7 @@ const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
     <React.Fragment>
-      <nav className="main-nav" id="navbar" style={{ marginBottom: "1em" }}>
+      <nav className="main-nav" id="navbar" style={{ marginBottom: "10px" }}>
         {/* 1st logo part  */}
         {/* <NavLink to='/' > */}
         <div className="head">

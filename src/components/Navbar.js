@@ -14,15 +14,15 @@ const Navbar = () => {
         {/* 1st logo part  */}
         {/* <NavLink to='/' > */}
         <div className="head">
-          <NavLink to="/" style={{ color: "black" }}>
-            <div className="logo-div">
+          <div style={{ color: "black", display:"flex" ,   }}>
+            <div className="logo-div" style={{width:"fitContent", marginRight:"2em"}}>
               <img src={logo} alt="Logo" className="logo" />
             </div>
             <div className="heading">
               <div className="main-heading">IEEE Student Branch</div>
               <div className="sub-heading">NIT Jamshedpur</div>
             </div>
-          </NavLink>
+          </div>
         </div>
         {/* </NavLink> */}
 

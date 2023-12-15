@@ -32,3 +32,14 @@
 .next {
   right: 10px;
 }
+
+@media (max-width: 736px) {
+  .carouselCaption {
+    font-size: 20px;
+  }
+}
+@media (min-width: 737px) {
+  .carouselCaption {
+    font-size: 28px;
+  }
+}

@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div className="container" id="about">
+    <div id="about">
       <div className="carousel-and-content">
         <h2
           style={{
@@ -32,7 +32,6 @@ const About = () => {
                   fontSize: "20px",
                   padding: "7%",
                   paddingTop: "12%",
-                  //   marginLeft: '%',
                   marginRight: "3%", // Adjust padding as needed
                   // width: '50%',            // Adjust width as needed
                   float: "left", // Align to the left
@@ -54,7 +53,15 @@ const About = () => {
                 </p>
               </div>
             </Col>
-            <Col style={{ marginBottom: "7%", borderRadius: "10%" }}>
+            <Col
+              style={{
+                marginBottom: "7%",
+                borderRadius: "10%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <iframe
                 style={{
                   maxHeight: "500px",

@@ -3,7 +3,7 @@ import logo from "../resources/logo.png";
 import "./navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {

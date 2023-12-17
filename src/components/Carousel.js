@@ -20,32 +20,6 @@ function ControlledCarousel() {
   const banners = [
     {
       id: 1,
-      title: "IEEE Student Branch NIT Jamshedpur inauguration",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: img1,
-    },
-    {
-      id: 2,
-      title: "Prof. Sivaji Chakravorti addresses NIT Jamshedpur students",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
-      image: img3,
-    },
-    {
-      id: 3,
-      title: "IEEE Student branch MTech members",
-      description:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-      image: img4,
-    },
-    {
-      id: 4,
-      title: "Advancing Technology for Humanity",
-      description:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-      image: img5,
-    },
-    {
-      id: 5,
       title:
         "NIT jamshedpur director Prof. Goutam Sutradhar welcomes Prof. Sivaji Chakravorti",
       description:
@@ -53,16 +27,42 @@ function ControlledCarousel() {
       image: img6,
     },
     {
-      id: 6,
+      id: 2,
       title: "",
       description:
         "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
       image: img7,
     },
+    {
+      id: 3,
+      title: "Prof. Sivaji Chakravorti addresses NIT Jamshedpur students",
+      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      image: img3,
+    },
+    {
+      id: 4,
+      title: "IEEE Student Branch NIT Jamshedpur inauguration",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: img1,
+    },
+    {
+      id: 5,
+      title: "Advancing Technology for Humanity",
+      description:
+        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      image: img5,
+    },
+    {
+      id: 6,
+      title: "IEEE Student branch MTech members",
+      description:
+        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      image: img4,
+    },
   ];
 
   return (
-    <Container style={{ maxWidth: "80%" }} id="carousel">
+    <Container style={{ minWidth: "100%" }} id="carousel">
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {banners.map((banner) => (
           <Carousel.Item key={banner.id}>

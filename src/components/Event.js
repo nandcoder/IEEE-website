@@ -26,10 +26,18 @@ const Event = () => {
   }, []);
 
   return (
-    <div id="event" className="p-4" style={{ margin: "0 8.3%" }}>
-      <div className="text-4xl font-semibold p-4 flex justify-center items-center h-full">
+    <div id="event" className="p-4" style={{ margin: "0 4.3%" }}>
+      <div className="text-4xl font-semibold p-4 flex justify-center items-center h-full memHead">
         Recent events
       </div>
+      <style jsx>{`
+        @media screen and (max-width: 500px) {
+          .memHead {
+            font-size: 24px; // Font size for screens less than 737px wide
+            margin: 0px;
+          }
+        }
+      `}</style>
       <div className=" flex flex-row ">
         {loading ? (
           <Spinner animation="border" variant="primary" />

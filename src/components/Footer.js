@@ -79,29 +79,6 @@ const Footer = () => {
               <a href="https://www.ieee.org/membership/benefits/index.html">
                 <button className="btn">{">"} Benefits</button>
               </a>
-              <a href="https://ieee-collabratec.ieee.org/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=collabratec-membership-list">
-                {" "}
-                <button className="btn">{">"} IEEE Collabrate</button>
-              </a>
-            </div>
-          </div>
-          <div className="footer-connect footer-section">
-            <div className="footer-header">
-              <h3>Connect with IEEE</h3>
-            </div>
-            <div>
-              <a href="https://www.ieee.org/about/contact.html?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=contact-support-button">
-                {" "}
-                <button className="btn-contact">Contact & Support</button>
-              </a>
-            </div>
-            <div className="footer-data-buttons footer-buttons">
-              <a href="https://ieee-collabratec.ieee.org/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=collabratec">
-                <button className="btn">{">"} IEEE Collabrate</button>
-              </a>
-              <a href="https://ieee.taleo.net/careersection/2/jobsearch.ftl?utm_source=mf&utm_campaign=taleo-jobs&utm_medium=footer&utm_term=taleo-jobs%20at%20ieee">
-                <button className="btn">{">"} Careers at IEEE</button>
-              </a>
               <a href="https://www.ieee.org/about/news/index.html?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=newsroom">
                 {" "}
                 <button className="btn">{">"} IEEE Newsroom</button>
@@ -122,16 +99,50 @@ const Footer = () => {
               </button>
             </div>
           </div>
+          {/* <div className="footer-connect footer-section">
+            <div className="footer-header">
+              <h3>Connect with IEEE</h3>
+            </div>
+            <div>
+              <a href="https://www.ieee.org/about/contact.html?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=contact-support-button">
+                {" "}
+                <button className="btn-contact">Contact & Support</button>
+              </a>
+            </div>
+            <div className="footer-data-buttons footer-buttons">
+              <a href="https://ieee-collabratec.ieee.org/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=collabratec">
+                <button className="btn">{">"} IEEE Collabrate</button>
+              </a>
+              <a href="https://ieee.taleo.net/careersection/2/jobsearch.ftl?utm_source=mf&utm_campaign=taleo-jobs&utm_medium=footer&utm_term=taleo-jobs%20at%20ieee">
+                <button className="btn">{">"} Careers at IEEE</button>
+              </a>
+
+              <button className="btn">
+                {">"}
+                <Link
+                  style={{
+                    fontSize: "inherit",
+                    color: "inherit",
+                    fontFamily: "inherit",
+                    textDecoration: "none",
+                  }}
+                  to="/branch"
+                >
+                  Admin Login
+                </Link>
+              </button>
+            </div>
+          </div> */}
         </div>
         {/* </div> */}
         <div
           className="footer-icons"
           style={{
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
             alignItems: "center",
-            width: "95%",
-            margin: "1em",
+            width: "98%",
+            // margin: "1em",
           }}
         >
           <div className="footer-socialedia">
@@ -176,7 +187,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright">
-        <div className="footer-copyright-statement">
+        <div className="footer-copyright-statement" style={{ width: "100%" }}>
           <p>
             Copyright © 2023 All rights reserved | Made with ❤️ by IEEE-NIT JSR
           </p>

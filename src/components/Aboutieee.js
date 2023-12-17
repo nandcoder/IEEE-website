@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 const Aboutieee = () => {
   return (
-    <div className='bg-sky-700 px-24 pb-8' id='membership'>
-      <div style={{ margin: '0 3%' }}>
-        <div className=''>
-          <div className='flex text-3xl font-semibold text-slate-50 py-4 justify-center'>
+    <div className="bg-sky-700 px-8 pb-8" id="membership">
+      <div style={{ margin: "0 1%" }}>
+        <div className="">
+          <div className="flex text-3xl font-semibold text-slate-50 py-4 justify-center">
             About IEEE
           </div>
-          <p className='text-lg font-normal text-slate-50 px-4 pb-4 text-justify'>
+          <p className="text-lg font-normal text-slate-50 px-4 pb-4 text-justify">
             IEEE is the world's largest professional association dedicated to
             advancing technological innovation and excellence for the benefit of
             humanity. When you join IEEE, you join a community of over 425,000
@@ -21,36 +21,36 @@ const Aboutieee = () => {
             more info about IEEE visit ieee.org.
           </p>
         </div>
-        <div className='sm:flex mt-8'>
-          <div className='bg-sky-900 m-3' style={{ borderRadius: '2%' }}>
-            <div className='text-3xl font-semibold text-slate-50 p-4'>
+        <div className="sm:flex mt-8">
+          <div className="bg-sky-900 m-3" style={{ borderRadius: "2%" }}>
+            <div className="text-3xl font-semibold text-slate-50 p-4">
               IEEE Membership
             </div>
-            <p className='text-lg font-normal text-slate-50 px-4  text-justify'>
+            <p className="text-lg font-normal text-slate-50 px-4  text-justify">
               To join this community of over 425,000 technology and engineering
               professionals united by a common desire to continuously learn,
               interact, collaborate, and innovate visit ieee/ membership and
               obtain your membership at the earliest.
             </p>
             <a
-              href='https://www.ieee.org/membership/join/index.html?utm_source=button_text&utm_medium=lp-membership&utm_campaign=join'
-              style={{ textDecoration: 'none' }}
+              href="https://www.ieee.org/membership/join/index.html?utm_source=button_text&utm_medium=lp-membership&utm_campaign=join"
+              style={{ textDecoration: "none" }}
             >
-              <div className='flex justify-end'>
-                <button className='py-0.5 px-4 bg-[#E87722] hover:bg-red-500 text-slate-100 text-xl font-medium rounded-2xl mr-4 mt-4 mb-3 cursor-pointer'>
+              <div className="flex justify-end">
+                <button className="py-0.5 px-4 bg-[#E87722] hover:bg-red-500 text-slate-100 text-xl font-medium rounded-2xl mr-4 mt-4 mb-3 cursor-pointer">
                   Join us
                 </button>
               </div>
             </a>
           </div>
           <div
-            className='bg-sky-900 sm:ml-6 m-3'
-            style={{ borderRadius: '2%' }}
+            className="bg-sky-900 sm:ml-6 m-3"
+            style={{ borderRadius: "2%" }}
           >
-            <div className='text-3xl font-semibold text-slate-50 p-4 '>
+            <div className="text-3xl font-semibold text-slate-50 p-4 ">
               IEEE Societies
             </div>
-            <p className='text-lg font-normal text-slate-50 px-4 pb-4 text-justify'>
+            <p className="text-lg font-normal text-slate-50 px-4 pb-4 text-justify">
               IEEE Society members stay technically current, network with
               colleagues locally and abroad, and collaborate on research and
               projects with leading experts - all while taking advantage of
@@ -58,11 +58,11 @@ const Aboutieee = () => {
               societies visit ieee/societies.
             </p>
             <a
-              href='https://www.ieee.org/communities/societies/index.html'
-              style={{ textDecoration: 'none' }}
+              href="https://www.ieee.org/communities/societies/index.html"
+              style={{ textDecoration: "none" }}
             >
-              <div className='flex justify-end'>
-                <button className='py-0.5 px-4 bg-[#E87722] hover:bg-red-500 text-slate-100 text-xl font-medium rounded-2xl mr-4 mb-3 cursor-pointer'>
+              <div className="flex justify-end">
+                <button className="py-0.5 px-4 bg-[#E87722] hover:bg-red-500 text-slate-100 text-xl font-medium rounded-2xl mr-4 mb-3 cursor-pointer">
                   Explore
                 </button>
               </div>

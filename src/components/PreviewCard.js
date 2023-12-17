@@ -26,6 +26,7 @@ function PreviewCard({ event }) {
           backgroundColor: "whitesmoke",
           color: "#F6F5F5",
           margin: "1em",
+          minWidth: "200px",
         }}
       >
         <img
@@ -62,10 +63,21 @@ function PreviewCard({ event }) {
           </div>
         </div>
         <div class="flex items-center "></div>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <Link
             to={`/events/event?id=${event._id}`}
-            style={{ textDecoration: "none" }}
+            style={{
+              textDecoration: "none",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
           >
             <button
               className=" hover:bg-sky-600   cursor-pointer bg-sky-700 text-slate-100 w-40 h-8 rounded-md mt-1 flex justify-center items-center  "
@@ -78,16 +90,6 @@ function PreviewCard({ event }) {
             >
               <div className="flex font-light">Read more</div>
             </button>
-
-            {/* <button
-              className="cursor-pointer bg-sky-700 text-slate-100 w-40 h-8 rounded-md mt-1 flex justify-center items-center"
-              style={{
-                borderRadius: "17px",
-                margin: "1em 3em 1em 1em",
-              }}
-            >
-              <div className="flex font-light">Read More</div>
-            </button> */}
           </Link>
         </div>
       </div>

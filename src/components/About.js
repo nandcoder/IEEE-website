@@ -1,16 +1,19 @@
-import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div style={{ margin: '0 9.1%' }}>
-      <div className='container' id='about'>
-        <div className='carousel-and-content'>
+    <div style={{ margin: "0 9.1%" }}>
+      <div className="container" id="about">
+        <div className="carousel-and-content">
           <h2
             style={{
-              marginLeft: '45%',
-              paddingBottom: '3.5%',
-              paddingTop: '2%',
+              // marginLeft: '45%',
+              display: "flex",
+              justifyContent: "center",
+              margin: "auto",
+              paddingBottom: "3.5%",
+              paddingTop: "2%",
             }}
           >
             About Us
@@ -19,25 +22,25 @@ const About = () => {
             <Row xs={1} md={2} lg={2}>
               <Col
                 style={{
-                  marginBottom: '7%',
-                  borderRadius: '10%',
+                  marginBottom: "7%",
+                  borderRadius: "10%",
                   // marginLeft: 1,
                 }}
               >
                 <div
                   style={{
-                    backgroundColor: '#d4e3ed', // Gray background color
-                    color: '#000',
-                    fontSize: '20px',
-                    padding: '7%',
-                    paddingTop: '12%',
+                    backgroundColor: "#d4e3ed", // Gray background color
+                    color: "#000",
+                    fontSize: "20px",
+                    padding: "7%",
+                    paddingTop: "12%",
                     //   marginLeft: '%',
-                    marginRight: '3%', // Adjust padding as needed
+                    marginRight: "3%", // Adjust padding as needed
                     // width: '50%',            // Adjust width as needed
-                    float: 'left', // Align to the left
-                    clear: 'both', // Clear the float
-                    boxSizing: 'border-box',
-                    borderRadius: '2%', // Include padding in width
+                    float: "left", // Align to the left
+                    clear: "both", // Clear the float
+                    boxSizing: "border-box",
+                    borderRadius: "2%", // Include padding in width
                   }}
                 >
                   <p>
@@ -54,19 +57,19 @@ const About = () => {
                   </p>
                 </div>
               </Col>
-              <Col style={{ marginBottom: '7%', borderRadius: '10%' }}>
+              <Col style={{ marginBottom: "7%", borderRadius: "10%" }}>
                 <iframe
                   style={{
-                    maxHeight: '500px',
-                    maxWidth: '1000px',
-                    height: '100%',
-                    width: '100%',
-                    borderRadius: '2%',
+                    maxHeight: "500px",
+                    maxWidth: "1000px",
+                    height: "100%",
+                    width: "100%",
+                    borderRadius: "2%",
                   }}
-                  src='https://www.youtube.com/embed/ERHPw_OaVI4?si=ZHcyIIQ2xNjotHC8'
-                  title='YouTube video player'
-                  frameborder='0'
-                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                  src="https://www.youtube.com/embed/ERHPw_OaVI4?si=ZHcyIIQ2xNjotHC8"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 ></iframe>
               </Col>

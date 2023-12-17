@@ -22,13 +22,21 @@ function PreviewCard({ event }) {
         style={{
           display: "flex",
           flexDirection: "column",
-          width: "25%",
+          width: "100%",
           backgroundColor: "whitesmoke",
           color: "#F6F5F5",
           margin: "1em",
           minWidth: "200px",
         }}
+        className="card"
       >
+        <style jsx>{`
+          @media screen and (min-width: 720px) {
+            .card {
+              width: 50%;
+            }
+          }
+        `}</style>
         <img
           src={event.images[0]}
           alt=""

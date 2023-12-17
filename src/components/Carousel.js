@@ -77,17 +77,16 @@ function ControlledCarousel() {
                 bottom: 0,
               }}
             >
-              {/* <Carousel.Caption
-              style={{
-                // fontSize: "2.25rem",
-                background:
-                  "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))",
-                width: "inherit",
-                left: 0,
-                bottom: 0,
-              }}
-            > */}
-              <h3 style={{ paddingBottom: "1%" }}>{banner.title}</h3>
+              <h3 className="carouselCaption" style={{ paddingBottom: "1%" }}>
+                {banner.title}
+              </h3>
+              <style jsx>{`
+                @media screen and (max-width: 500px) {
+                  h3 {
+                    font-size: 14px; // Font size for screens less than 737px wide
+                  }
+                }
+              `}</style>
             </Carousel.Caption>
           </Carousel.Item>
         ))}

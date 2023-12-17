@@ -55,7 +55,7 @@ const Footer = () => {
               <div>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14714.745506649784!2d86.12609155541993!3d22.77701740000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4daa475a5cd%3A0xd87b53fadcd771a1!2sNational%20Institute%20of%20Technology%2C%20Jamshedpur!5e0!3m2!1sen!2sin!4v1702625360018!5m2!1sen!2sin"
-                  style={{ width: "15em", height: "10em" }}
+                  style={{ width: "15em", height: "8em" }}
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
@@ -129,9 +129,9 @@ const Footer = () => {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            // alignItems: "center",
-            width: "90%",
-            marginLeft: "3em",
+            alignItems: "center",
+            width: "95%",
+            margin: "1em",
           }}
         >
           <div className="footer-socialedia">

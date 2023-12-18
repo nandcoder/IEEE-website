@@ -35,7 +35,7 @@ function Events() {
     <>
       <div
         style={{
-          width: "75vw",
+          width: "70vw",
           minHeight: "100vh",
           backgroundColor: "#166499",
           margin: "auto",
@@ -49,7 +49,7 @@ function Events() {
         <div
           style={{
             color: "#F6F5F5",
-            fontSize: "2em",
+            fontSize: "28px",
             font: "Inter",
             fontWeight: "600",
             position: "relative",
@@ -57,7 +57,6 @@ function Events() {
             height: "auto",
             top: "2%",
             fontFamily: "'Inter', sans-serif",
-            
           }}
         >
           EVENTS

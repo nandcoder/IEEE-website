@@ -5,7 +5,7 @@
 @layer base {
   body {
     background-color: aqua;
-
+    /* min-width: 100vw; */
   }
 }
 

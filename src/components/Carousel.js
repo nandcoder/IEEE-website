@@ -7,6 +7,8 @@ import img1 from "../assets/ieee1.jpg";
 import img3 from "../assets/ieee3.jpg";
 import img4 from "../assets/ieee4.jpg";
 import img5 from "../assets/ieee5.jpg";
+import img6 from "../assets/ieee6.jpeg";
+import img7 from "../assets/ieee7.jpeg";
 // import img from "../resources/bg.jpg"
 
 function ControlledCarousel() {
@@ -18,34 +20,57 @@ function ControlledCarousel() {
   const banners = [
     {
       id: 1,
-      title: "IEEE Student Branch NIT Jamshedpur inauguration",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: img1,
+      title:
+        "NIT jamshedpur director Prof. Goutam Sutradhar welcomes Prof. Sivaji Chakravorti",
+      description:
+        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      image: img6,
     },
     {
       id: 2,
+      title: "",
+      description:
+        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      image: img7,
+    },
+    {
+      id: 3,
       title: "Prof. Sivaji Chakravorti addresses NIT Jamshedpur students",
       description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
       image: img3,
     },
     {
-      id: 3,
-      title: "IEEE Student branch MTech members",
-      description:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-      image: img4,
+      id: 4,
+      title: "IEEE Student Branch NIT Jamshedpur inauguration",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: img1,
     },
     {
-      id: 4,
+      id: 5,
       title: "Advancing Technology for Humanity",
       description:
         "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
       image: img5,
     },
+    {
+      id: 6,
+      title: "IEEE Student branch MTech members",
+      description:
+        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      image: img4,
+    },
   ];
 
   return (
-    <Container style={{ maxWidth: "80%" }} id="carousel">
+    <Container
+      style={{
+        minWidth: "100%",
+        margin: "0px",
+        boxSizing: "border-box",
+        padding: "0px",
+      }}
+      id="carousel"
+    >
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {banners.map((banner) => (
           <Carousel.Item key={banner.id}>
@@ -60,17 +85,16 @@ function ControlledCarousel() {
                 bottom: 0,
               }}
             >
-              {/* <Carousel.Caption
-              style={{
-                // fontSize: "2.25rem",
-                background:
-                  "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))",
-                width: "inherit",
-                left: 0,
-                bottom: 0,
-              }}
-            > */}
-              <h3 style={{ paddingBottom: "1%" }}>{banner.title}</h3>
+              <h3 className="carouselCaption" style={{ paddingBottom: "1%" }}>
+                {banner.title}
+              </h3>
+              <style jsx>{`
+                @media screen and (max-width: 500px) {
+                  h3 {
+                    font-size: 14px; // Font size for screens less than 737px wide
+                  }
+                }
+              `}</style>
             </Carousel.Caption>
           </Carousel.Item>
         ))}

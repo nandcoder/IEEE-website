@@ -1,12 +1,10 @@
 import React from "react";
 import "./css/Footer.css";
 import { Link } from "react-router-dom";
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import { useNavigate } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
-  const location = useLocation();
   const goToBtn = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
@@ -55,10 +53,11 @@ const Footer = () => {
               <div>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14714.745506649784!2d86.12609155541993!3d22.77701740000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e4daa475a5cd%3A0xd87b53fadcd771a1!2sNational%20Institute%20of%20Technology%2C%20Jamshedpur!5e0!3m2!1sen!2sin!4v1702625360018!5m2!1sen!2sin"
-                  style={{ width: "15em", height: "10em" }}
+                  style={{ width: "15em", height: "8em" }}
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
+                  title="NIT Jamshedpur Location on Google Maps"
                 ></iframe>
               </div>
             </div>
@@ -78,13 +77,27 @@ const Footer = () => {
               <a href="https://www.ieee.org/membership/benefits/index.html">
                 <button className="btn">{">"} Benefits</button>
               </a>
-              <a href="https://ieee-collabratec.ieee.org/?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=collabratec-membership-list">
+              <a href="https://www.ieee.org/about/news/index.html?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=newsroom">
                 {" "}
-                <button className="btn">{">"} IEEE Collabrate</button>
+                <button className="btn">{">"} IEEE Newsroom</button>
               </a>
+              <button className="btn">
+                {">"}
+                <Link
+                  style={{
+                    fontSize: "inherit",
+                    color: "inherit",
+                    fontFamily: "inherit",
+                    textDecoration: "none",
+                  }}
+                  to="https://eager-twill-ray.cyclic.app/admin/dashboard"
+                >
+                  Admin Login
+                </Link>
+              </button>
             </div>
           </div>
-          <div className="footer-connect footer-section">
+          {/* <div className="footer-connect footer-section">
             <div className="footer-header">
               <h3>Connect with IEEE</h3>
             </div>
@@ -101,10 +114,7 @@ const Footer = () => {
               <a href="https://ieee.taleo.net/careersection/2/jobsearch.ftl?utm_source=mf&utm_campaign=taleo-jobs&utm_medium=footer&utm_term=taleo-jobs%20at%20ieee">
                 <button className="btn">{">"} Careers at IEEE</button>
               </a>
-              <a href="https://www.ieee.org/about/news/index.html?utm_source=dhtml_footer&utm_medium=hp&utm_campaign=newsroom">
-                {" "}
-                <button className="btn">{">"} IEEE Newsroom</button>
-              </a>
+
               <button className="btn">
                 {">"}
                 <Link
@@ -120,10 +130,19 @@ const Footer = () => {
                 </Link>
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* </div> */}
-        <div className="footer-icons">
+        <div
+          className="footer-icons"
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            alignItems: "center",
+            width: "98%",
+            // margin: "1em",
+          }}
+        >
           <div className="footer-socialedia">
             <a
               href="https://www.instagram.com/ieee.nitjsr/"
@@ -142,7 +161,9 @@ const Footer = () => {
                 rel="noreferrer"
               ></i>
             </a>
-            <i className="fa-brands fa-youtube"></i>
+            <a href="https://www.youtube.com/@IEEEStudentBranchNITJamshedpur">
+              <i className="fa-brands fa-youtube"></i>
+            </a>
             {/* <i class="fa-brands fa-x-twitter"></i> */}
             {/* <i className="fa-sharp fa-solid fa-share-nodes"></i> */}
           </div>
@@ -164,7 +185,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright">
-        <div className="footer-copyright-statement">
+        <div className="footer-copyright-statement" style={{ width: "100%" }}>
           <p>
             Copyright © 2023 All rights reserved | Made with ❤️ by IEEE-NIT JSR
           </p>

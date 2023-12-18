@@ -88,6 +88,18 @@ const Features = () => {
           </div>
         </div>
       </div>
+      <style jsx>{`
+        @media screen and (max-width: 500px) {
+          .memText {
+            font-size: 14px; // Font size for screens less than 737px wide
+            margin: 0px;
+          }
+          .memHead {
+            font-size: 24px; // Font size for screens less than 737px wide
+            margin: 0px;
+          }
+        }
+      `}</style>
     </div>
   );
 };

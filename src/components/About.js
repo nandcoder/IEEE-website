@@ -80,6 +80,8 @@ const About = () => {
                     padding-top: 0%;
                     boxsizing: border-box;
                   }
+                  .container {
+                  }
                 }
               `}</style>
             </Col>

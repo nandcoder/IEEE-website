@@ -2,7 +2,16 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 const About = () => {
   return (
-    <div id="about" className=" container " style={{ minWidth: "100vw" }}>
+    <div
+      id="about"
+      className=" container "
+      style={{
+        minWidth: "100vw",
+        margin: "0px",
+        boxSizing: "border-box",
+        padding: "0px",
+      }}
+    >
       <div
         className="carousel-and-content smscreen"
         style={{ margin: "0px", boxSizing: "border-box", padding: "0px" }}
@@ -88,6 +97,7 @@ const About = () => {
                   maxHeight: "500px",
                   maxWidth: "1000px",
                   height: "100%",
+
                   width: "100%",
                   borderRadius: "2%",
                 }}
@@ -104,6 +114,8 @@ const About = () => {
           @media screen and (max-width: 500px) {
             .youtube {
               margin: 0px;
+              min-height: 15em;
+              padding: 0px;
             }
             .smscreen {
               width: 100%;

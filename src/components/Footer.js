@@ -3,10 +3,8 @@ import "./css/Footer.css";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { useNavigate } from "react-router-dom";
-// import { useLocation } from "react-router-dom";
 const Footer = () => {
   const navigate = useNavigate();
-  // const location = useLocation();
   const goToBtn = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
@@ -92,7 +90,7 @@ const Footer = () => {
                     fontFamily: "inherit",
                     textDecoration: "none",
                   }}
-                  to="/branch"
+                  to="https://eager-twill-ray.cyclic.app/admin/dashboard"
                 >
                   Admin Login
                 </Link>

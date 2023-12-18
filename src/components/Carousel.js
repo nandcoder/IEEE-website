@@ -62,7 +62,15 @@ function ControlledCarousel() {
   ];
 
   return (
-    <Container style={{ minWidth: "100%" }} id="carousel">
+    <Container
+      style={{
+        minWidth: "100%",
+        margin: "0px",
+        boxSizing: "border-box",
+        padding: "0px",
+      }}
+      id="carousel"
+    >
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {banners.map((banner) => (
           <Carousel.Item key={banner.id}>

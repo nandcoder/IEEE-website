@@ -22,18 +22,22 @@ function PreviewCard({ event }) {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          width: '25%',
+          width: '100%',
+          maxWidth: '300px',
           backgroundColor: 'whitesmoke',
           color: '#F6F5F5',
+          height: '550px',
           margin: '1em',
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         <img
           src={event.images[0]}
           alt=''
           srcset=''
-          style={{ maxHeight: '100%' }}
-        />{' '}
+          style={{ height: '200px' }}
+        />
         <div
           style={{
             display: 'flex',
@@ -44,6 +48,17 @@ function PreviewCard({ event }) {
         >
           <div
             className='col-span-3'
+            style={{
+              color: 'black',
+              fontSize: '20px',
+              padding: '8px 15px',
+              fontWeight: 'bold',
+            }}
+          >
+            {event.title}
+          </div>
+          <div
+            className='col-span-3 p-4 text-justify'
             style={{
               padding: 15,
               color: 'black',
@@ -61,8 +76,14 @@ function PreviewCard({ event }) {
             {event.summary}
           </div>
         </div>
-        <div class='flex items-center '></div>
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: 'auto', // Push the button to the bottom
+            marginBottom: '5%',
+          }}
+        >
           <Link
             to={`/events/event?id=${event._id}`}
             style={{ textDecoration: 'none' }}
@@ -71,15 +92,19 @@ function PreviewCard({ event }) {
               className='bg-sky-700 hover:bg-sky-600 text-slate-100 font-light py-2 px-4  flex '
               style={{
                 borderRadius: '17px',
-                height: '40%',
+                height: '40%', // Adjusted height
                 width: '80%',
-                margin: '1em 3em 1em 1em',
+                margin: '1em',
                 display: 'flex',
                 justifyContent: 'center',
+                alignItems: 'center',
+                whiteSpace: 'nowrap',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
               }}
               onClick={handleReadMore}
             >
-              <div className='flex p-1 items-center justify-center'>
+              <div className='flex p-1 items-center justify-center width-80'>
                 Read more
               </div>
             </button>

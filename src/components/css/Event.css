@@ -1,0 +1,17 @@
+.arrow {
+  font-size: 50px;
+  color: rgb(69, 67, 67);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: -5%; /* Adjust this value to position the left arrow */
+}
+
+.arrow-right {
+  right: -5%; /* Adjust this value to position the right arrow */
+}

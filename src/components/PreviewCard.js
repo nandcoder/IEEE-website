@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function PreviewCard({ event }) {
   // const navigate = useNavigate();
-  const [localDate, setLocalDate] = useState("");
+  const [localDate, setLocalDate] = useState('');
 
   useEffect(() => {
     const eventDate = new Date(event.date);
@@ -12,8 +12,8 @@ function PreviewCard({ event }) {
   }, [event.date]);
 
   const handleReadMore = () => {
-    console.log("The event is: ", event);
-    console.log("Local date is: ", localDate);
+    console.log('The event is: ', event);
+    console.log('Local date is: ', localDate);
   };
 
   return (
@@ -31,7 +31,7 @@ function PreviewCard({ event }) {
           justifyContent: 'center',
           alignItems: 'center',
         }}
-        className="card"
+        className='card'
       >
         <style jsx>{`
           @media screen and (min-width: 720px) {
@@ -48,14 +48,14 @@ function PreviewCard({ event }) {
         />
         <div
           style={{
-            display: "flex",
-            flexDirection: "column",
-            margin: "none",
-            maxWidth: "100%",
+            display: 'flex',
+            flexDirection: 'column',
+            margin: 'none',
+            maxWidth: '100%',
           }}
         >
           <div
-            className="col-span-3"
+            className='col-span-3'
             style={{
               color: 'black',
               fontSize: '20px',
@@ -69,16 +69,16 @@ function PreviewCard({ event }) {
             className='col-span-3 p-4 text-justify'
             style={{
               padding: 15,
-              color: "black",
-              alignItems: "center",
-              display: "flex",
-              position: "relative",
-              flexDirection: "column",
-              maxHeight: "100%", // Adjust the max height based on your needs
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              whiteSpace: "wrap", // Use nowrap to prevent line breaks
-              width: "100%",
+              color: 'black',
+              alignItems: 'center',
+              display: 'flex',
+              position: 'relative',
+              flexDirection: 'column',
+              maxHeight: '100%', // Adjust the max height based on your needs
+              overflow: 'hidden',
+              textOverflow: 'ellipsis',
+              whiteSpace: 'wrap', // Use nowrap to prevent line breaks
+              width: '100%',
             }}
           >
             {event.summary}
@@ -95,14 +95,14 @@ function PreviewCard({ event }) {
           <Link
             to={`/events/event?id=${event._id}`}
             style={{
-              textDecoration: "none",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
+              textDecoration: 'none',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
             }}
           >
             <button
-              className=" hover:bg-sky-600   cursor-pointer bg-sky-700 text-slate-100 w-40 h-8 rounded-md mt-1 flex justify-center items-center  "
+              className=' hover:bg-sky-600   cursor-pointer bg-sky-700 text-slate-100 w-40 h-8 rounded-md mt-1 flex justify-center items-center  '
               style={{
                 borderRadius: '17px',
                 height: '40%', // Adjusted height
@@ -117,7 +117,7 @@ function PreviewCard({ event }) {
               }}
               onClick={handleReadMore}
             >
-              <div className='flex p-1 items-center justify-center width-80'>
+              <div className='flex p-3 items-center justify-center width-80'>
                 Read more
               </div>
             </button>

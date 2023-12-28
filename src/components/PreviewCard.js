@@ -20,6 +20,7 @@ function PreviewCard({ event }) {
     <>
       <div
         style={{
+          position: 'relative',
           display: 'flex',
           flexDirection: 'column',
           width: '100%',
@@ -48,19 +49,22 @@ function PreviewCard({ event }) {
         />
         <div
           style={{
+            position: 'relative',
             display: 'flex',
+            padding: '4px 2px',
             flexDirection: 'column',
-            margin: 'none',
-            maxWidth: '100%',
+            width: '100%',
           }}
         >
           <div
             className='col-span-3'
             style={{
+              position: 'absolute',
               color: 'black',
               fontSize: '20px',
               padding: '8px 15px',
               fontWeight: 'bold',
+              overflow: 'hidden',
             }}
           >
             {event.title}
@@ -70,15 +74,14 @@ function PreviewCard({ event }) {
             style={{
               padding: 15,
               color: 'black',
-              alignItems: 'center',
               display: 'flex',
-              position: 'relative',
+              position: 'absolute',
               flexDirection: 'column',
               maxHeight: '100%', // Adjust the max height based on your needs
-              overflow: 'hidden',
               textOverflow: 'ellipsis',
               whiteSpace: 'wrap', // Use nowrap to prevent line breaks
               width: '100%',
+              marginTop: '70px',
             }}
           >
             {event.summary}

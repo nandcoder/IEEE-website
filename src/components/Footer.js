@@ -37,12 +37,13 @@ const Footer = () => {
           </div>
           <div className="footer-locations footer-section">
             <div className="footer-header">
-              <h3>Locations</h3>
+              <h3>Location</h3>
             </div>
             <div className="footer-data">
               <div className="footer-data-description">
                 <p>
-                  IEEE has a global presence with seven offices internationally.
+                  Our IEEE student branch is located within the NIT Jamshepur
+                  campus, Adityapur, Jharkhand - 831014
                 </p>
               </div>
               <div className="footer-data-buttons footer-buttons">

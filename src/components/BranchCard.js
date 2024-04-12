@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "../assets/krishna2.jpg";
 import { useNavigate } from "react-router-dom";
 function EventCard({ event }) {
   const navigate = useNavigate();

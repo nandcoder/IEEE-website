@@ -7,7 +7,6 @@ function Form() {
   const { id } = useParams();
   const [event, setEvent] = useState({});
   const [post, setPost] = useState(false);
-  const [update, setUpdate] = useState(false);
   const [posted, setPosted] = useState(false);
   const [eventImage, setEventImage] = useState([]);
   const [files, setFiles] = useState([]);

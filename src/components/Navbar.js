@@ -8,11 +8,10 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+  const [linkColor, setLinkColor] = useState("black");
   return (
     <React.Fragment>
       <nav className="main-nav" id="navbar">
-        {/* 1st logo part  */}
-        {/* <NavLink to='/' > */}
         <div className="head">
           <NavLink to="/" style={{ color: "black" }}>
             <div className="logo-div">
@@ -96,6 +95,16 @@ const Navbar = () => {
                 smooth={true}
                 offset={-30}
                 duration={500}
+                style={{
+                  textDecoration: "none",
+                  color: linkColor,
+                }}
+                onMouseEnter={() => {
+                  setLinkColor("white");
+                }}
+                onMouseLeave={() => {
+                  setLinkColor("black");
+                }}
               >
                 Our team
               </Link>

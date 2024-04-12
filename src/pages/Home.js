@@ -4,9 +4,6 @@ import Event from "../components/Event";
 import Features from "../components/Features";
 import HeroCarousel from "../components/Carousel";
 import About from "../components/About";
-
-import { Container } from "react-bootstrap";
-import AboutMobile from "../components/AboutMobile";
 import BranchChapters from "../components/BranchChapters";
 
 function Home() {

@@ -1,5 +1,5 @@
 import React from "react";
-import TeamCard from "../components/TeamCard";
+import TeamCard from "../components/teamCard";
 const Ourteam = () => {
   return (
     <>

@@ -1,5 +1,5 @@
 import React from "react";
-import Img1 from "../assets/manager.png";
+import Img1 from "../assets/manager.jpg";
 function TeamCard({ name, pos }) {
   return (
     <>
@@ -7,17 +7,24 @@ function TeamCard({ name, pos }) {
         className="card  bg-base-100 shadow-xl mx-2 my-2"
         style={{ maxWidth: "40%" }}
       >
-        <figure>
-          <img src={Img1} alt="Shoes" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title flex items-center justify-center ">
+        <div className="mx-2 my-2">
+          <img
+            src={Img1}
+            alt="Shoes"
+            style={{ borderRadius: "100%", height: "15em", width: "20em" }}
+          />
+        </div>
+        <div className="card-body" style={{ height: "8em" }}>
+          <h2
+            className="card-title flex items-center justify-center "
+            style={{ textAlign: "center" }}
+          >
             {name}
           </h2>
 
           <div
             className="card-actions  flex items-center justify-center"
-            style={{ fontSize: "1.5em" }}
+            style={{ fontSize: "1.5em", textAlign: "center" }}
           >
             {pos}
           </div>

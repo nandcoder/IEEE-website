@@ -1,5 +1,5 @@
 import React from "react";
-import TeamCard from "../components/TeamCard";
+import TeamCard from "../components/teamCard";
 const Ourteam = () => {
   return (
     <>
@@ -14,15 +14,28 @@ const Ourteam = () => {
         >
           OUR TEAM
         </div>
-        <div className="flex items-center justify-center flex-wrap ">
+        <div className="flex items-center justify-center flex-wrap flex-col ">
           {" "}
-          <TeamCard name="Nishant Kumar" pos="Chairperson" />
-          <TeamCard name="Mantosh Kumar" pos="Vice - Chairperson" />
-          <TeamCard name="Rajesh Kumar" pos="Treasurer" />
-          <TeamCard name="Md Sazzad" pos="Secretary" />
-          <TeamCard name="Kumaresh Pal" pos="Webmaster" />
-          <TeamCard name="Abhinav Kumar" pos="Volunteer" />
-          <TeamCard name="Himanshu" pos="Volunteer" />
+          <div
+            className="flex items-center justify-center "
+            style={{ width: "100%" }}
+          >
+            <TeamCard name="name" pos="Chairperson" />
+          </div>
+          <div
+            className="flex items-center justify-center"
+            style={{ width: "100%" }}
+          >
+            <TeamCard name="name" pos="Vice - Chairperson" />
+            <TeamCard name="name" pos="Secretary" />
+          </div>
+          <div
+            className="flex items-center justify-center"
+            style={{ width: "100%" }}
+          >
+            <TeamCard name="name" pos="Treasurer" />
+            <TeamCard name="name" pos="Webmaster" />
+          </div>
         </div>
       </div>
     </>

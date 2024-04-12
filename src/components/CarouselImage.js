@@ -8,7 +8,12 @@ const CarouselImage = ({ text, image }) => {
       src={image}
       alt={text}
       fluid
-      style={{ margin: "auto 0", padding: "auto 0" }}
+      style={{
+        margin: "auto",
+        padding: "auto 0",
+        height: "auto",
+        width: "100dvw",
+      }}
     />
   );
 };

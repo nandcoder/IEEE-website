@@ -11,7 +11,7 @@ function TeamCard({ name, pos }) {
           <img
             src={Img1}
             alt="Shoes"
-            style={{ borderRadius: "100%", height: "15em", width: "20em" }}
+            style={{ borderRadius: "100%", height: "10em", width: "12em" }}
           />
         </div>
         <div className="card-body" style={{ height: "8em" }}>
@@ -24,7 +24,7 @@ function TeamCard({ name, pos }) {
 
           <div
             className="card-actions  flex items-center justify-center"
-            style={{ fontSize: "1.5em", textAlign: "center" }}
+            style={{ textAlign: "center" }}
           >
             {pos}
           </div>

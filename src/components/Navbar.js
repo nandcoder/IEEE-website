@@ -91,7 +91,7 @@ const Navbar = () => {
             </li>
             <li className="navbar-buttons cursor-pointer">
               <Link
-                to="team"
+                href="/our-team"
                 spy={true}
                 smooth={true}
                 offset={-30}

@@ -89,25 +89,19 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="navbar-buttons cursor-pointer">
-              <Link
-                href="/our-team"
-                spy={true}
-                smooth={true}
-                offset={-30}
-                duration={500}
+              <a
+                href="http://localhost:3000/our-team"
+                // target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   textDecoration: "none",
-                  color: linkColor,
+                  // color: "black",
+                  transition: "color 0.3s ease", // Add smooth transition for color change
                 }}
-                onMouseEnter={() => {
-                  setLinkColor("white");
-                }}
-                onMouseLeave={() => {
-                  setLinkColor("black");
-                }}
+                className="hoverLink"
               >
-                Our team
-              </Link>
+                Our Team
+              </a>
             </li>
           </ul>
         </div>

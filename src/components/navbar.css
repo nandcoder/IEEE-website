@@ -65,6 +65,13 @@ li {
   margin-right: 10px;
 }
 
+.hoverLink {
+  color: BLACK;
+}
+.hoverLink:hover {
+  color: white;
+}
+
 .navbar-buttons {
   font-size: 1.2rem;
   font-weight: bolder;

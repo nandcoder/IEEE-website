@@ -8,11 +8,10 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
+  const [linkColor, setLinkColor] = useState("black");
   return (
     <React.Fragment>
       <nav className="main-nav" id="navbar">
-        {/* 1st logo part  */}
-        {/* <NavLink to='/' > */}
         <div className="head">
           <NavLink to="/" style={{ color: "black" }}>
             <div className="logo-div">
@@ -90,15 +89,19 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="navbar-buttons cursor-pointer">
-              <Link
-                href="/our-team"
-                spy={true}
-                smooth={true}
-                offset={-30}
-                duration={500}
+              <a
+                href="http://localhost:3000/our-team"
+                // target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  textDecoration: "none",
+                  // color: "black",
+                  transition: "color 0.3s ease", // Add smooth transition for color change
+                }}
+                className="hoverLink"
               >
-                Our team
-              </Link>
+                Our Team
+              </a>
             </li>
           </ul>
         </div>

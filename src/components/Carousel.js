@@ -1,23 +1,32 @@
-import { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import ExampleCarouselImage from "./CarouselImage";
-import { Container } from "react-bootstrap";
+import React from "react";
+import Slider from "react-slick";
 import img1 from "../assets/ieee1.jpg";
-// import img2 from "../assets/ieee2.jpg"
+import img2 from "../assets/ieee2.jpg";
 import img3 from "../assets/ieee3.jpg";
 import img4 from "../assets/ieee4.jpg";
 import img5 from "../assets/ieee5.jpg";
 import img6 from "../assets/ieee6.jpeg";
 import img7 from "../assets/ieee7.jpeg";
 import estimg from "../assets/establishment.jpg";
-// import img from "../resources/bg.jpg"
+import "./Carousel.css";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
-function ControlledCarousel() {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
+function AdaptiveHeight() {
+  const settings = {
+    className: "",
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    prevArrow: <FaArrowAltCircleLeft />,
+    nextArrow: <FaArrowAltCircleRight />,
+    beforeChange: (current, next) => {
+      console.log(next);
+    },
   };
+
   const banners = [
     {
       id: 1,
@@ -71,45 +80,32 @@ function ControlledCarousel() {
   ];
 
   return (
-    <Container
-      style={{
-        minWidth: "100%",
-        margin: "0px",
-        boxSizing: "border-box",
-        padding: "0px",
-      }}
-      id="carousel"
-    >
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-        {banners.map((banner) => (
-          <Carousel.Item key={banner.id}>
-            <ExampleCarouselImage text={banner.title} image={banner.image} />
-            <Carousel.Caption
-              className="text-lg sm:text-sm"
-              style={{
-                background:
-                  "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))",
-                width: "inherit",
-                left: 0,
-                bottom: 0,
-              }}
-            >
-              <h3 className="carouselCaption" style={{ paddingBottom: "1%" }}>
-                {banner.title}
-              </h3>
-              <style jsx>{`
-                @media screen and (max-width: 500px) {
-                  h3 {
-                    font-size: 14px; // Font size for screens less than 737px wide
-                  }
-                }
-              `}</style>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </Container>
+    <div className="slider-container" style={{ margin: "1em 3em" }}>
+      <Slider {...settings}>
+        <div>
+          <img src={banners[0].image} alt="" srcset="" className="image" />
+        </div>
+        <div>
+          <img src={banners[1].image} alt="" srcset="" className="image" />
+        </div>
+        <div>
+          <img src={banners[2].image} alt="" srcset="" className="image" />
+        </div>
+        <div>
+          <img src={banners[3].image} alt="" srcset="" className="image" />
+        </div>
+        <div>
+          <img src={banners[4].image} alt="" srcset="" className="image" />
+        </div>
+        <div>
+          <img src={banners[5].image} alt="" srcset="" className="image" />
+        </div>
+        <div>
+          <img src={banners[6].image} alt="" srcset="" className="image" />
+        </div>
+      </Slider>
+    </div>
   );
 }
 
-export default ControlledCarousel;
+export default AdaptiveHeight;

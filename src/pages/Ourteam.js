@@ -1,9 +1,9 @@
 import React from "react";
-import TeamCard from "../components/teamCard";
+import Testing from "../components/Testing";
 const Ourteam = () => {
   return (
     <>
-      <div style={{ width: "100dvw", margin: "auto" }}>
+      {/* <div style={{ width: "100dvw", margin: "auto" }}>
         <div
           style={{
             width: "100%",
@@ -37,7 +37,8 @@ const Ourteam = () => {
             <TeamCard name="name" pos="Webmaster" />
           </div>
         </div>
-      </div>
+      </div> */}
+      <Testing />
     </>
   );
 };

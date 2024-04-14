@@ -4,14 +4,14 @@ function TeamCard({ name, pos }) {
   return (
     <>
       <div
-        className="card  bg-base-100 shadow-xl mx-2 my-2"
+        className="card  bg-base-100 shadow-xl mx-2 my-2 px-4 py-4"
         style={{ maxWidth: "40%" }}
       >
         <div className="mx-2 my-2">
           <img
             src={Img1}
             alt="Shoes"
-            style={{ borderRadius: "100%", height: "10em", width: "12em" }}
+            style={{ borderRadius: "100%", height: "1em", width: "12em" }}
           />
         </div>
         <div className="card-body" style={{ height: "8em" }}>

@@ -72,7 +72,7 @@ function AdaptiveHeight() {
     },
     {
       id: 7,
-      title: "NEWSLETTER",
+      title: "",
       description:
         "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
       image: img7,
@@ -82,27 +82,14 @@ function AdaptiveHeight() {
   return (
     <div className="slider-container" style={{ margin: "1em 3em" }}>
       <Slider {...settings}>
-        <div>
-          <img src={banners[0].image} alt="" srcset="" className="image" />
-        </div>
-        <div>
-          <img src={banners[1].image} alt="" srcset="" className="image" />
-        </div>
-        <div>
-          <img src={banners[2].image} alt="" srcset="" className="image" />
-        </div>
-        <div>
-          <img src={banners[3].image} alt="" srcset="" className="image" />
-        </div>
-        <div>
-          <img src={banners[4].image} alt="" srcset="" className="image" />
-        </div>
-        <div>
-          <img src={banners[5].image} alt="" srcset="" className="image" />
-        </div>
-        <div>
-          <img src={banners[6].image} alt="" srcset="" className="image" />
-        </div>
+        {banners.map((banner, index) => (
+          <div key={index}>
+            <img src={banner.image} alt="" className="image" />
+            <div className="flex items-center justify-center text-center my-4">
+              {banner.title}
+            </div>
+          </div>
+        ))}
       </Slider>
     </div>
   );

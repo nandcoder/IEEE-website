@@ -90,7 +90,7 @@ const Navbar = () => {
             </li>
             <li className="navbar-buttons cursor-pointer">
               <a
-                href="http://localhost:3000/our-team"
+                href="/our-team"
                 // target="_blank"
                 rel="noopener noreferrer"
                 style={{

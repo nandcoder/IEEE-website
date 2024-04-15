@@ -10,6 +10,7 @@ const About = () => {
         margin: "0px",
         boxSizing: "border-box",
         padding: "0px",
+        marginTop: "2em",
       }}
     >
       <div

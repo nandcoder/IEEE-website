@@ -1,7 +1,10 @@
 .slick-prev,
 .slick-next {
   font-size: 24px;
-  color: black; /* Adjust the color as needed */
+  color: black;
+  z-index: 1; /* Ensure arrows are above the slider */
+  top: 35%; /* Adjust vertically */
+  transform: translateY(-50%); /* Center vertically */
 }
 
 .slick-next:hover {

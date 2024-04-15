@@ -19,3 +19,22 @@
   height: 100dvh;
   margin: auto;
 }
+
+@media (max-width: 1150px) {
+  .image {
+    width: 80dvw;
+    height: 80dvh;
+  }
+}
+@media (max-width: 900px) {
+  .image {
+    width: 80dvw;
+    height: 60dvh;
+  }
+}
+@media (max-width: 600px) {
+  .image {
+    width: 80dvw;
+    height: 30dvh;
+  }
+}

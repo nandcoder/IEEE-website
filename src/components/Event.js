@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import PreviewCard from './PreviewCard';
@@ -34,12 +33,12 @@ const Event = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          "https://ieee-1vzv.onrender.com/api/events"
+          'https://eager-twill-ray.cyclic.app/api/events'
         );
         setEvent(response.data.events);
-        console.log("Successfully fetched ", response.data.events);
+        console.log('Successfully fetched ', response.data.events);
       } catch (error) {
-        console.error("Error fetching events:", error);
+        console.error('Error fetching events:', error);
       }
       setLoading(false);
     };
@@ -81,13 +80,13 @@ const Event = () => {
   };
 
   return (
-    <div id="event" className="p-4" style={{ margin: "0 4.3%" }}>
-      <div className="text-4xl font-semibold p-4 flex justify-center items-center h-full memHead">
+    <div id='event' className='p-4' style={{ margin: '0 4.3%' }}>
+      <div className='text-4xl font-semibold p-4 flex justify-center items-center h-full memHead'>
         Recent events
       </div>
       <div className=' m-auto mt-5'>
         {loading ? (
-          <Spinner animation="border" variant="primary" />
+          <Spinner animation='border' variant='primary' />
         ) : (
           <Slider {...settings}>
             {event?.map((eventItem, index) => (
@@ -101,8 +100,8 @@ const Event = () => {
           </Slider>
         )}
       </div>
-      <Link to="/events" style={{ textDecoration: "none" }}>
-        <div className="flex justify-center items-center">
+      <Link to='/events' style={{ textDecoration: 'none' }}>
+        <div className='flex justify-center items-center'>
           <button
             className='cursor-pointer bg-sky-700 text-slate-100 w-40 h-8 rounded-md mt-5 flex justify-center items-center'
             style={{
@@ -110,7 +109,7 @@ const Event = () => {
               margin: '1em ',
             }}
           >
-            <div className="flex font-light">Events Archive</div>
+            <div className='flex font-light'>Events Archive</div>
           </button>
         </div>
       </Link>

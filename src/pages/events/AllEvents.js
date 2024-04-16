@@ -13,7 +13,7 @@ function AllEvents() {
       setLoading(true);
       try {
         const response = await axios.get(
-          'https://ieee-1vzv.onrender.com/api/events'
+          'https://eager-twill-ray.cyclic.app/api/events'
         );
         setEvent(response.data.events);
         console.log('Successfully fetched ', response.data.events);
@@ -60,9 +60,11 @@ function AllEvents() {
         >
           ALL EVENTS
         </div>
-        {loading ? <Spinner animation="border" variant="primary" /> : event?.map((event, index) => (
-          <EventCard key={index} event={event} />
-        ))}
+        {loading ? (
+          <Spinner animation='border' variant='primary' />
+        ) : (
+          event?.map((event, index) => <EventCard key={index} event={event} />)
+        )}
       </div>
     </>
   );

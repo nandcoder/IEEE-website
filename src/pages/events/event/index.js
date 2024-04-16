@@ -10,7 +10,7 @@ const EventDetails = () => {
   // console.log(query);
   useEffect(() => {
     axios
-      .get('https://ieee-1vzv.onrender.com/api/events')
+      .get('https://eager-twill-ray.cyclic.app/api/events')
       .then((res) => {
         res.data.events.map((content) => {
           console.log('The event is ', content);
@@ -64,7 +64,7 @@ const EventDetails = () => {
   }
   return (
     <>
-      <div className='px-20 py-10 mx-20 my-10 font-light'>
+      <div className='eventStyle font-light'>
         <div className='mr-20 ml-'>
           <h1>{event?.title}</h1>
         </div>
@@ -84,19 +84,49 @@ const EventDetails = () => {
             </div>
           </p>
         </div>
-        <div className='mt-3 mb-5 flex justify-center item-center'>
+        <div className='imageDiv mt-3 mb-3 flex'>
           {event?.images.map((img) => (
-            <img
-              src={img}
-              alt=''
-              style={{ height: '50%', width: '50%', padding: 10 }}
-            />
+            <img src={img} alt='' className='imageStyle' />
           ))}
         </div>
         <div className='text-justify'>
           <p dangerouslySetInnerHTML={{ __html: event?.body }}></p>
         </div>
       </div>
+      <style jsx>{`
+        @media screen and (min-width: 750px) {
+          .eventStyle {
+            padding: 40px 80px;
+          }
+          .imageDiv {
+            width: 50%;
+          }
+          .imageStyle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+          }
+        }
+        @media screen and (max-width: 750px) {
+          .eventStyle {
+            padding: 10px 20px;
+          }
+          .imageDiv {
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+          }
+          .imageStyle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+          }
+        }
+      `}</style>
     </>
   );
 };

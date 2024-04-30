@@ -33,7 +33,7 @@ function EventCard({ event }) {
           width: "95%",
           backgroundColor: "#0A4771",
           color: "#F6F5F5",
-          margin: "2em",
+          margin: "1em",
         }}
       >
         <div
@@ -43,8 +43,8 @@ function EventCard({ event }) {
             color: "#F6F5F5",
             display: "flex",
             flexDirection: "row",
-            padding: "2em",
-            margin: "2em",
+            padding: "1em",
+            margin: "1em",
             marginBottom: "0",
             paddingBottom: "0",
             justifyContent: "space-between",
@@ -111,7 +111,7 @@ function EventCard({ event }) {
           >
             <button
               class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4  flex items-center"
-              style={{ borderRadius: "50px", margin: "1em 3em 1em 1em" }}
+              style={{ borderRadius: "50px", margin: "1em 1em 1em 1em" }}
               onClick={handleReadMore}
             >
               Read more

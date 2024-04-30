@@ -19,6 +19,7 @@ function EventCard({ event }) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+    console.log(event);
   }, []);
   const handleReadMore = () => {
     console.log("The event is: ", event);
@@ -90,7 +91,7 @@ function EventCard({ event }) {
                   textOverflow: "ellipsis",
                   maxHeight: "100%",
                 }}
-                dangerouslySetInnerHTML={{ __html: event.body }}
+                dangerouslySetInnerHTML={{ __html: event.summary }}
               />
             </div>
             <div style={{ fontSize: "16px" }}>

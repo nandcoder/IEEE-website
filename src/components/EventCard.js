@@ -4,13 +4,22 @@ import { Link } from "react-router-dom";
 function EventCard({ event }) {
   // const navigate = useNavigate();
   const [localDate, setLocalDate] = useState("");
-
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
   useEffect(() => {
     const eventDate = new Date(event.date);
     const formattedLocalDate = eventDate.toLocaleDateString();
     setLocalDate(formattedLocalDate);
   }, [event.date]);
-
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 1000);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const handleReadMore = () => {
     console.log("The event is: ", event);
   };
@@ -21,14 +30,14 @@ function EventCard({ event }) {
         style={{
           display: "flex",
           flexDirection: "column",
-          width: "90%",
+          width: "95%",
           backgroundColor: "#0A4771",
           color: "#F6F5F5",
           margin: "2em",
         }}
       >
         <div
-          className="grid grid-cols-4 gap-2"
+          className={`flex ${isSmallScreen ? "flex-wrap" : ""} `}
           style={{
             backgroundColor: "#0A4771",
             color: "#F6F5F5",
@@ -39,16 +48,24 @@ function EventCard({ event }) {
             marginBottom: "0",
             paddingBottom: "0",
             justifyContent: "space-between",
-            maxHeight: "15em",
+            maxHeight: "fit-content",
             maxWidth: "100%",
           }}
         >
+          <div class="flex items-center mx-auto " style={{ minWidth: "30%" }}>
+            <img
+              src={event.images[0]}
+              alt=""
+              srcset=""
+              style={{ margin: "auto", maxHeight: "15em" }}
+            />{" "}
+          </div>
           <div
             style={{
               display: "flex",
               flexDirection: "column",
               margin: "none",
-              maxWidth: "80%",
+              padding: isSmallScreen ? "none" : "2em",
             }}
           >
             <div>
@@ -56,15 +73,14 @@ function EventCard({ event }) {
               <h2 style={{ fontSize: "20px" }}>{event.title}</h2>
             </div>
             <div
-              className="col-span-3"
               style={{
                 alignItems: "center",
                 display: "flex",
                 position: "relative",
                 flexDirection: "column",
-                maxHeight: "50%", // Adjust the max height based on your needs
-                // whiteSpace: "wrap", // Use nowrap to prevent line breaks
-                width: "80%",
+                maxHeight: "40dvh",
+                overflow: "hidden",
+                width: "100%",
                 fontSize: "16px",
               }}
             >
@@ -86,14 +102,6 @@ function EventCard({ event }) {
 
               {/* <div>{event.location} </div> */}
             </div>
-          </div>
-          <div class="col-span-1 flex items-center ">
-            <img
-              src={event.images[0]}
-              alt=""
-              srcset=""
-              style={{ margin: "auto", maxHeight: "150px" }}
-            />{" "}
           </div>
         </div>
         <div style={{ display: "flex", justifyContent: "right" }}>
